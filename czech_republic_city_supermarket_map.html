@@ -1,0 +1,2875 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c3ea44fc047964e368e175d749acadac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c3ea44fc047964e368e175d749acadac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c3ea44fc047964e368e175d749acadac = L.map(
+                "map_c3ea44fc047964e368e175d749acadac",
+                {
+                    center: [49.8175, 15.473],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25d730ff8db80d21f47f8fcf491475fb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25d730ff8db80d21f47f8fcf491475fb.addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var marker_f819b3e747325425791934dbfc63f0dc = L.marker(
+                [49.5754282, 17.2279435],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_be60808349c802603e9d17e5d82bf592 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbeffa87b6b77721e9717e0474a804b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93848306a7b0c9cea684e1c28774ddd7 = $(`<div id="html_93848306a7b0c9cea684e1c28774ddd7" style="width: 100.0%; height: 100.0%;"><b>Olomouc</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_dbeffa87b6b77721e9717e0474a804b6.setContent(html_93848306a7b0c9cea684e1c28774ddd7);
+            
+        
+
+        marker_f819b3e747325425791934dbfc63f0dc.bindPopup(popup_dbeffa87b6b77721e9717e0474a804b6)
+        ;
+
+        
+    
+    
+                marker_f819b3e747325425791934dbfc63f0dc.setIcon(icon_be60808349c802603e9d17e5d82bf592);
+            
+    
+            var marker_8d41c53d169a6ecf9a8f3d78943db889 = L.marker(
+                [50.3520684, 14.48278005],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_4c7f032109bb4ea53b877a7568f16edb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30778e2d675c7294a60c736febe8ca20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f94301397dc20d450c8990e35d46c352 = $(`<div id="html_f94301397dc20d450c8990e35d46c352" style="width: 100.0%; height: 100.0%;"><b>Mělník</b><br>Total supermarkets: 2<br>Kaufland: 1<br>Tesco: 1<br></div>`)[0];
+                popup_30778e2d675c7294a60c736febe8ca20.setContent(html_f94301397dc20d450c8990e35d46c352);
+            
+        
+
+        marker_8d41c53d169a6ecf9a8f3d78943db889.bindPopup(popup_30778e2d675c7294a60c736febe8ca20)
+        ;
+
+        
+    
+    
+                marker_8d41c53d169a6ecf9a8f3d78943db889.setIcon(icon_4c7f032109bb4ea53b877a7568f16edb);
+            
+    
+            var marker_4c9389b49c433fe01e513cb51dc5262d = L.marker(
+                [50.14319545, 14.5158096],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_b219614981a5a567eafed72155978421 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63d96a01e6430ed8078b0f7ad7e64a9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20d56f4d89d99fd997359a3c65720034 = $(`<div id="html_20d56f4d89d99fd997359a3c65720034" style="width: 100.0%; height: 100.0%;"><b>Praha 9</b><br>Total supermarkets: 2<br>Tesco: 2<br></div>`)[0];
+                popup_63d96a01e6430ed8078b0f7ad7e64a9e.setContent(html_20d56f4d89d99fd997359a3c65720034);
+            
+        
+
+        marker_4c9389b49c433fe01e513cb51dc5262d.bindPopup(popup_63d96a01e6430ed8078b0f7ad7e64a9e)
+        ;
+
+        
+    
+    
+                marker_4c9389b49c433fe01e513cb51dc5262d.setIcon(icon_b219614981a5a567eafed72155978421);
+            
+    
+            var marker_e8360be1d1175f0c54ed5a90b0598421 = L.marker(
+                [49.7762453, 17.1222987],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_6fbe5ea2ccee7f42023a5cf8f682d768 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c7df8fd2343b733a94f8c3f718e8d91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb74d71fe92a0312458485bf73e68604 = $(`<div id="html_cb74d71fe92a0312458485bf73e68604" style="width: 100.0%; height: 100.0%;"><b>Uničov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_4c7df8fd2343b733a94f8c3f718e8d91.setContent(html_cb74d71fe92a0312458485bf73e68604);
+            
+        
+
+        marker_e8360be1d1175f0c54ed5a90b0598421.bindPopup(popup_4c7df8fd2343b733a94f8c3f718e8d91)
+        ;
+
+        
+    
+    
+                marker_e8360be1d1175f0c54ed5a90b0598421.setIcon(icon_6fbe5ea2ccee7f42023a5cf8f682d768);
+            
+    
+            var marker_fb351b9236d14edaf420b1aeb6daaea3 = L.marker(
+                [49.72820275, 13.35235605],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_b81986f16c39d15e55ffac4b7313926f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_130ee51db3d2f8d44af4896068916e2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e8918f270c8f479fb9baf19a7444ce5 = $(`<div id="html_2e8918f270c8f479fb9baf19a7444ce5" style="width: 100.0%; height: 100.0%;"><b>Plzeň</b><br>Total supermarkets: 2<br>Tesco: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_130ee51db3d2f8d44af4896068916e2e.setContent(html_2e8918f270c8f479fb9baf19a7444ce5);
+            
+        
+
+        marker_fb351b9236d14edaf420b1aeb6daaea3.bindPopup(popup_130ee51db3d2f8d44af4896068916e2e)
+        ;
+
+        
+    
+    
+                marker_fb351b9236d14edaf420b1aeb6daaea3.setIcon(icon_b81986f16c39d15e55ffac4b7313926f);
+            
+    
+            var marker_967e41b2c2c403fae71f34ab657f138d = L.marker(
+                [51.0051482, 14.454252],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_f5416d0681507646fc2826e9dcc4742c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03e6843781a342087353e9aee56e46bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61ba7b5267e232c53c29b3be878aa929 = $(`<div id="html_61ba7b5267e232c53c29b3be878aa929" style="width: 100.0%; height: 100.0%;"><b>Šluknov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_03e6843781a342087353e9aee56e46bc.setContent(html_61ba7b5267e232c53c29b3be878aa929);
+            
+        
+
+        marker_967e41b2c2c403fae71f34ab657f138d.bindPopup(popup_03e6843781a342087353e9aee56e46bc)
+        ;
+
+        
+    
+    
+                marker_967e41b2c2c403fae71f34ab657f138d.setIcon(icon_f5416d0681507646fc2826e9dcc4742c);
+            
+    
+            var marker_a62c24b27d9fb1ef8429237e28e8c035 = L.marker(
+                [49.7057505, 17.0739779],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_277cc77e9e5f9bc75d3067b05714a110 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee27ed3e04aa5dab2b586d1cca60b77f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28851d97b72698e045c6eabc9eb6bef7 = $(`<div id="html_28851d97b72698e045c6eabc9eb6bef7" style="width: 100.0%; height: 100.0%;"><b>Litovel</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_ee27ed3e04aa5dab2b586d1cca60b77f.setContent(html_28851d97b72698e045c6eabc9eb6bef7);
+            
+        
+
+        marker_a62c24b27d9fb1ef8429237e28e8c035.bindPopup(popup_ee27ed3e04aa5dab2b586d1cca60b77f)
+        ;
+
+        
+    
+    
+                marker_a62c24b27d9fb1ef8429237e28e8c035.setIcon(icon_277cc77e9e5f9bc75d3067b05714a110);
+            
+    
+            var marker_0fddbd65172635f93c148faee95de661 = L.marker(
+                [50.047520750000004, 14.308909700000001],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_70abb8b75f65e756a317c6e62f1d393b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3d8ccfe410052c4140981beea5dd949 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98ef02e55241d84e65fb693e73206486 = $(`<div id="html_98ef02e55241d84e65fb693e73206486" style="width: 100.0%; height: 100.0%;"><b>Praha 5</b><br>Total supermarkets: 2<br>Tesco: 2<br></div>`)[0];
+                popup_d3d8ccfe410052c4140981beea5dd949.setContent(html_98ef02e55241d84e65fb693e73206486);
+            
+        
+
+        marker_0fddbd65172635f93c148faee95de661.bindPopup(popup_d3d8ccfe410052c4140981beea5dd949)
+        ;
+
+        
+    
+    
+                marker_0fddbd65172635f93c148faee95de661.setIcon(icon_70abb8b75f65e756a317c6e62f1d393b);
+            
+    
+            var marker_13df134bba00ddb5a7744c65f8c59200 = L.marker(
+                [49.370167, 16.6415369],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_46fa82aa8b18ba2dc06acf22fc0dfc72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9120727564c7d42de8e80cfec2a701a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05bf4e84fcaf288a8c9c23f9625f0aba = $(`<div id="html_05bf4e84fcaf288a8c9c23f9625f0aba" style="width: 100.0%; height: 100.0%;"><b>Blansko</b><br>Total supermarkets: 2<br>Kaufland: 1<br>Lidl: 1<br></div>`)[0];
+                popup_f9120727564c7d42de8e80cfec2a701a.setContent(html_05bf4e84fcaf288a8c9c23f9625f0aba);
+            
+        
+
+        marker_13df134bba00ddb5a7744c65f8c59200.bindPopup(popup_f9120727564c7d42de8e80cfec2a701a)
+        ;
+
+        
+    
+    
+                marker_13df134bba00ddb5a7744c65f8c59200.setIcon(icon_46fa82aa8b18ba2dc06acf22fc0dfc72);
+            
+    
+            var marker_d534af8f8c09276a90a69943458b2541 = L.marker(
+                [50.0936772, 14.466778033333334],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_2c0ad3582696ba96716b866cf25c11a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff1d9095e9c6067476b72c6bd7fa4c90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c35e4989ab15b87447aa409301a247f = $(`<div id="html_9c35e4989ab15b87447aa409301a247f" style="width: 100.0%; height: 100.0%;"><b>Praha</b><br>Total supermarkets: 3<br>Kaufland: 1<br>Lidl: 2<br></div>`)[0];
+                popup_ff1d9095e9c6067476b72c6bd7fa4c90.setContent(html_9c35e4989ab15b87447aa409301a247f);
+            
+        
+
+        marker_d534af8f8c09276a90a69943458b2541.bindPopup(popup_ff1d9095e9c6067476b72c6bd7fa4c90)
+        ;
+
+        
+    
+    
+                marker_d534af8f8c09276a90a69943458b2541.setIcon(icon_2c0ad3582696ba96716b866cf25c11a9);
+            
+    
+            var marker_cda5a7b1b8ebc322194c1a7111de48ca = L.marker(
+                [50.7287701, 15.4508138],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_1ee3af314ddca376267850b365909b17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1efb7f4f8463d46fed698e48fa29867 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6079b0f7274e5bed031620d4291fe3d1 = $(`<div id="html_6079b0f7274e5bed031620d4291fe3d1" style="width: 100.0%; height: 100.0%;"><b>Rokytnice nad Jizerou</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_e1efb7f4f8463d46fed698e48fa29867.setContent(html_6079b0f7274e5bed031620d4291fe3d1);
+            
+        
+
+        marker_cda5a7b1b8ebc322194c1a7111de48ca.bindPopup(popup_e1efb7f4f8463d46fed698e48fa29867)
+        ;
+
+        
+    
+    
+                marker_cda5a7b1b8ebc322194c1a7111de48ca.setIcon(icon_1ee3af314ddca376267850b365909b17);
+            
+    
+            var marker_aace87483ef44e6f1fd64037ba7dacaa = L.marker(
+                [49.1482841, 14.181066],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_7508387f9469de4953da6c526e4dcad7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec966bf4b1bbd23ff5d7d61c3e1fad81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38536c2a9cb603c388b43cd11ceddd02 = $(`<div id="html_38536c2a9cb603c388b43cd11ceddd02" style="width: 100.0%; height: 100.0%;"><b>Vodňany</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_ec966bf4b1bbd23ff5d7d61c3e1fad81.setContent(html_38536c2a9cb603c388b43cd11ceddd02);
+            
+        
+
+        marker_aace87483ef44e6f1fd64037ba7dacaa.bindPopup(popup_ec966bf4b1bbd23ff5d7d61c3e1fad81)
+        ;
+
+        
+    
+    
+                marker_aace87483ef44e6f1fd64037ba7dacaa.setIcon(icon_7508387f9469de4953da6c526e4dcad7);
+            
+    
+            var marker_220723674fbc7f8c4af49a0f376ff5d9 = L.marker(
+                [50.2141873, 12.1998791],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_a2f9cf6796e000b4f8829722ab8bc8d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ec1ec1a085f0bc4264e8ce00e090f3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_196f52e95d2f7c0d64b9d307ebd14749 = $(`<div id="html_196f52e95d2f7c0d64b9d307ebd14749" style="width: 100.0%; height: 100.0%;"><b>Aš</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_6ec1ec1a085f0bc4264e8ce00e090f3a.setContent(html_196f52e95d2f7c0d64b9d307ebd14749);
+            
+        
+
+        marker_220723674fbc7f8c4af49a0f376ff5d9.bindPopup(popup_6ec1ec1a085f0bc4264e8ce00e090f3a)
+        ;
+
+        
+    
+    
+                marker_220723674fbc7f8c4af49a0f376ff5d9.setIcon(icon_a2f9cf6796e000b4f8829722ab8bc8d6);
+            
+    
+            var marker_a752614190690f49720bd2bf19c07fbf = L.marker(
+                [49.8757763, 14.9040241],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_c680c2bfa080c014c702958d9c5da3a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e094558650e3e29b4db23343ede189fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3f9052fd2af466a2091528658320e03 = $(`<div id="html_f3f9052fd2af466a2091528658320e03" style="width: 100.0%; height: 100.0%;"><b>Sázava</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_e094558650e3e29b4db23343ede189fd.setContent(html_f3f9052fd2af466a2091528658320e03);
+            
+        
+
+        marker_a752614190690f49720bd2bf19c07fbf.bindPopup(popup_e094558650e3e29b4db23343ede189fd)
+        ;
+
+        
+    
+    
+                marker_a752614190690f49720bd2bf19c07fbf.setIcon(icon_c680c2bfa080c014c702958d9c5da3a8);
+            
+    
+            var marker_538940df11fcdb32abe6e8b318d24ced = L.marker(
+                [49.6368809, 18.7195907],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_9a5e84be7d641d834f42fd9f2d61646b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ba7730ac95be05a85b1b7859e60966a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76d931cc2532b6d8df16792da55734dc = $(`<div id="html_76d931cc2532b6d8df16792da55734dc" style="width: 100.0%; height: 100.0%;"><b>Bystřice</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_6ba7730ac95be05a85b1b7859e60966a.setContent(html_76d931cc2532b6d8df16792da55734dc);
+            
+        
+
+        marker_538940df11fcdb32abe6e8b318d24ced.bindPopup(popup_6ba7730ac95be05a85b1b7859e60966a)
+        ;
+
+        
+    
+    
+                marker_538940df11fcdb32abe6e8b318d24ced.setIcon(icon_9a5e84be7d641d834f42fd9f2d61646b);
+            
+    
+            var marker_f2992ffc96fe8fd7994d643fa2dd4ad2 = L.marker(
+                [50.5878094, 15.1575671],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_651fcb9f4b744b674ba336b77218afd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d87c46e631062f27a2c79f4ffbfd782b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac484206493a01c5a9f263cf0ae6d95c = $(`<div id="html_ac484206493a01c5a9f263cf0ae6d95c" style="width: 100.0%; height: 100.0%;"><b>Turnov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_d87c46e631062f27a2c79f4ffbfd782b.setContent(html_ac484206493a01c5a9f263cf0ae6d95c);
+            
+        
+
+        marker_f2992ffc96fe8fd7994d643fa2dd4ad2.bindPopup(popup_d87c46e631062f27a2c79f4ffbfd782b)
+        ;
+
+        
+    
+    
+                marker_f2992ffc96fe8fd7994d643fa2dd4ad2.setIcon(icon_651fcb9f4b744b674ba336b77218afd2);
+            
+    
+            var marker_3426cf38015703b79506687d781c06b5 = L.marker(
+                [49.6534027, 14.4260762],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_a11a777786ab737866c584c5789a0374 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_047db78073885ab09c07dc4570b677d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4c41e4df68ed63a9b946d10dd34ca08 = $(`<div id="html_a4c41e4df68ed63a9b946d10dd34ca08" style="width: 100.0%; height: 100.0%;"><b>Sedlčany</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_047db78073885ab09c07dc4570b677d1.setContent(html_a4c41e4df68ed63a9b946d10dd34ca08);
+            
+        
+
+        marker_3426cf38015703b79506687d781c06b5.bindPopup(popup_047db78073885ab09c07dc4570b677d1)
+        ;
+
+        
+    
+    
+                marker_3426cf38015703b79506687d781c06b5.setIcon(icon_a11a777786ab737866c584c5789a0374);
+            
+    
+            var marker_03b9d121aa7c9c085f55e988928262cb = L.marker(
+                [50.7414552, 14.2947926],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_95176013a0b3c5875368300e5be5c0f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7b32df354e284916b90e10bc205b3ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8211f13d6195677d2afeed5534f9fff7 = $(`<div id="html_8211f13d6195677d2afeed5534f9fff7" style="width: 100.0%; height: 100.0%;"><b>Benešov nad Ploučnicí</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_a7b32df354e284916b90e10bc205b3ca.setContent(html_8211f13d6195677d2afeed5534f9fff7);
+            
+        
+
+        marker_03b9d121aa7c9c085f55e988928262cb.bindPopup(popup_a7b32df354e284916b90e10bc205b3ca)
+        ;
+
+        
+    
+    
+                marker_03b9d121aa7c9c085f55e988928262cb.setIcon(icon_95176013a0b3c5875368300e5be5c0f4);
+            
+    
+            var marker_79c04b0ccfc317ad8d9138eb7d8a6483 = L.marker(
+                [49.9954459, 14.1581396],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_60d1a528ab2055aaceb03f18d60ddd95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d45259b39d35bd74cf3e825d84ab7bec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbecceafe43c586df649b6d0eff42ad7 = $(`<div id="html_dbecceafe43c586df649b6d0eff42ad7" style="width: 100.0%; height: 100.0%;"><b>Loděnice</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_d45259b39d35bd74cf3e825d84ab7bec.setContent(html_dbecceafe43c586df649b6d0eff42ad7);
+            
+        
+
+        marker_79c04b0ccfc317ad8d9138eb7d8a6483.bindPopup(popup_d45259b39d35bd74cf3e825d84ab7bec)
+        ;
+
+        
+    
+    
+                marker_79c04b0ccfc317ad8d9138eb7d8a6483.setIcon(icon_60d1a528ab2055aaceb03f18d60ddd95);
+            
+    
+            var marker_535f81fcc28e2a5582bd943f88d1b415 = L.marker(
+                [50.7363097, 15.1753994],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_b938be7ca820d3969284bf44a53fc87a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea7997c00c71a5ae1f8736c48c150f6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d3e9799dee53ae29dadab6ef7b61f44 = $(`<div id="html_7d3e9799dee53ae29dadab6ef7b61f44" style="width: 100.0%; height: 100.0%;"><b>Jablonec nad Nisou</b><br>Total supermarkets: 2<br>Tesco: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_ea7997c00c71a5ae1f8736c48c150f6d.setContent(html_7d3e9799dee53ae29dadab6ef7b61f44);
+            
+        
+
+        marker_535f81fcc28e2a5582bd943f88d1b415.bindPopup(popup_ea7997c00c71a5ae1f8736c48c150f6d)
+        ;
+
+        
+    
+    
+                marker_535f81fcc28e2a5582bd943f88d1b415.setIcon(icon_b938be7ca820d3969284bf44a53fc87a);
+            
+    
+            var marker_1e97c137abb61c61aa14a182bbbacde4 = L.marker(
+                [49.7387964, 13.6004995],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_8134fd4f14e4e2ab28f132c837626e76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48715ca9f9fb69de619b9ebd78570ba5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93f89084d5369f8a98c84e2020dd742a = $(`<div id="html_93f89084d5369f8a98c84e2020dd742a" style="width: 100.0%; height: 100.0%;"><b>Rokycany</b><br>Total supermarkets: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_48715ca9f9fb69de619b9ebd78570ba5.setContent(html_93f89084d5369f8a98c84e2020dd742a);
+            
+        
+
+        marker_1e97c137abb61c61aa14a182bbbacde4.bindPopup(popup_48715ca9f9fb69de619b9ebd78570ba5)
+        ;
+
+        
+    
+    
+                marker_1e97c137abb61c61aa14a182bbbacde4.setIcon(icon_8134fd4f14e4e2ab28f132c837626e76);
+            
+    
+            var marker_102e346d386a7b7c6b27c1486ac4913c = L.marker(
+                [49.85152215, 18.5551444],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_0815fa0eee8aefe164c0ab11baeccffe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c249f32c10dd0618ced04b6fb62f6561 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b732be4578d617039f15bcac6052c159 = $(`<div id="html_b732be4578d617039f15bcac6052c159" style="width: 100.0%; height: 100.0%;"><b>Karviná</b><br>Total supermarkets: 2<br>Tesco: 2<br></div>`)[0];
+                popup_c249f32c10dd0618ced04b6fb62f6561.setContent(html_b732be4578d617039f15bcac6052c159);
+            
+        
+
+        marker_102e346d386a7b7c6b27c1486ac4913c.bindPopup(popup_c249f32c10dd0618ced04b6fb62f6561)
+        ;
+
+        
+    
+    
+                marker_102e346d386a7b7c6b27c1486ac4913c.setIcon(icon_0815fa0eee8aefe164c0ab11baeccffe);
+            
+    
+            var marker_203b85e11261d25ab4f544833ea21422 = L.marker(
+                [49.3029058, 14.4759122],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_7b617dbe377bd47b74f95edb62c666f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f099087613c6fe1f2a26914a1bbb634 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ddcfe00d67bb239ac4adde44d8742ce = $(`<div id="html_2ddcfe00d67bb239ac4adde44d8742ce" style="width: 100.0%; height: 100.0%;"><b>Bechyně</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_2f099087613c6fe1f2a26914a1bbb634.setContent(html_2ddcfe00d67bb239ac4adde44d8742ce);
+            
+        
+
+        marker_203b85e11261d25ab4f544833ea21422.bindPopup(popup_2f099087613c6fe1f2a26914a1bbb634)
+        ;
+
+        
+    
+    
+                marker_203b85e11261d25ab4f544833ea21422.setIcon(icon_7b617dbe377bd47b74f95edb62c666f6);
+            
+    
+            var marker_7fe2eec60f90602d6b8454dabc6aaef2 = L.marker(
+                [50.4533077, 14.3743317],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_0c70ee773e068054076e945751929eb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49a3049ec178fd8203f85043c4b1eb8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eed802f4c721eb13609645bb758bb32c = $(`<div id="html_eed802f4c721eb13609645bb758bb32c" style="width: 100.0%; height: 100.0%;"><b>Štětí</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_49a3049ec178fd8203f85043c4b1eb8b.setContent(html_eed802f4c721eb13609645bb758bb32c);
+            
+        
+
+        marker_7fe2eec60f90602d6b8454dabc6aaef2.bindPopup(popup_49a3049ec178fd8203f85043c4b1eb8b)
+        ;
+
+        
+    
+    
+                marker_7fe2eec60f90602d6b8454dabc6aaef2.setIcon(icon_0c70ee773e068054076e945751929eb7);
+            
+    
+            var marker_3a5bf99ffdc2d3d1146db530cbd089a8 = L.marker(
+                [49.18823815, 16.607504750000004],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_cffd49a0952e094a3c14770a9e631f69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6c62923f3f9f89d8d9fd90c230229a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2240bf5c6d814f56ddf42a055be63cf = $(`<div id="html_a2240bf5c6d814f56ddf42a055be63cf" style="width: 100.0%; height: 100.0%;"><b>Brno</b><br>Total supermarkets: 6<br>Tesco: 3<br>Lidl: 3<br></div>`)[0];
+                popup_c6c62923f3f9f89d8d9fd90c230229a4.setContent(html_a2240bf5c6d814f56ddf42a055be63cf);
+            
+        
+
+        marker_3a5bf99ffdc2d3d1146db530cbd089a8.bindPopup(popup_c6c62923f3f9f89d8d9fd90c230229a4)
+        ;
+
+        
+    
+    
+                marker_3a5bf99ffdc2d3d1146db530cbd089a8.setIcon(icon_cffd49a0952e094a3c14770a9e631f69);
+            
+    
+            var marker_89524745738b1f78bb74e92f3f83510f = L.marker(
+                [49.4923011, 16.6482411],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_0ac41729d4761b614b52558e990a7bec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6af9481af375ba35c4beff3fefd644b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b78c871af5b5c5aad1728c364aa90bf3 = $(`<div id="html_b78c871af5b5c5aad1728c364aa90bf3" style="width: 100.0%; height: 100.0%;"><b>Boskovice</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_6af9481af375ba35c4beff3fefd644b9.setContent(html_b78c871af5b5c5aad1728c364aa90bf3);
+            
+        
+
+        marker_89524745738b1f78bb74e92f3f83510f.bindPopup(popup_6af9481af375ba35c4beff3fefd644b9)
+        ;
+
+        
+    
+    
+                marker_89524745738b1f78bb74e92f3f83510f.setIcon(icon_0ac41729d4761b614b52558e990a7bec);
+            
+    
+            var marker_6dd1e9b4018ecfbe354ae6462987d638 = L.marker(
+                [50.5987646, 15.3271786],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_c22c83e9550f2f66cd8c4e8aad23264a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d8d4e927cb1404970762e9424ae454e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7103a44b15028b12343d87983c0f120a = $(`<div id="html_7103a44b15028b12343d87983c0f120a" style="width: 100.0%; height: 100.0%;"><b>Semily</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_7d8d4e927cb1404970762e9424ae454e.setContent(html_7103a44b15028b12343d87983c0f120a);
+            
+        
+
+        marker_6dd1e9b4018ecfbe354ae6462987d638.bindPopup(popup_7d8d4e927cb1404970762e9424ae454e)
+        ;
+
+        
+    
+    
+                marker_6dd1e9b4018ecfbe354ae6462987d638.setIcon(icon_c22c83e9550f2f66cd8c4e8aad23264a);
+            
+    
+            var marker_d1766a55deb3c944387817e662ed0e29 = L.marker(
+                [50.4252604, 15.8099598],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_6fdd1021f9a008f911112dd79181f877 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caf9f2f0a59c3d84652868e6a82e22a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2055ed8150be92228c56f39753288308 = $(`<div id="html_2055ed8150be92228c56f39753288308" style="width: 100.0%; height: 100.0%;"><b>Dvůr Králové</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_caf9f2f0a59c3d84652868e6a82e22a5.setContent(html_2055ed8150be92228c56f39753288308);
+            
+        
+
+        marker_d1766a55deb3c944387817e662ed0e29.bindPopup(popup_caf9f2f0a59c3d84652868e6a82e22a5)
+        ;
+
+        
+    
+    
+                marker_d1766a55deb3c944387817e662ed0e29.setIcon(icon_6fdd1021f9a008f911112dd79181f877);
+            
+    
+            var marker_eb37a00c6545ae7e1246ea69e43f1c32 = L.marker(
+                [50.0406425, 14.463265366666667],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_b24ba67b88a0ec9548ea2793169fd9c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7eee9a3b2f3bd7e3c5066469f1752eb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79a1d274c8dc1e8517ce2db75d4b55f7 = $(`<div id="html_79a1d274c8dc1e8517ce2db75d4b55f7" style="width: 100.0%; height: 100.0%;"><b>Praha 4</b><br>Total supermarkets: 3<br>Tesco: 3<br></div>`)[0];
+                popup_7eee9a3b2f3bd7e3c5066469f1752eb3.setContent(html_79a1d274c8dc1e8517ce2db75d4b55f7);
+            
+        
+
+        marker_eb37a00c6545ae7e1246ea69e43f1c32.bindPopup(popup_7eee9a3b2f3bd7e3c5066469f1752eb3)
+        ;
+
+        
+    
+    
+                marker_eb37a00c6545ae7e1246ea69e43f1c32.setIcon(icon_b24ba67b88a0ec9548ea2793169fd9c4);
+            
+    
+            var marker_af15625aef9e85bc5c39120ce59db7d9 = L.marker(
+                [49.95911975, 15.2835637],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_5dba08c915557fa1629a7206bd8f2d38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d781b4296738323aac15985f5213df67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01843714b758bd9acb658dc838b40ccc = $(`<div id="html_01843714b758bd9acb658dc838b40ccc" style="width: 100.0%; height: 100.0%;"><b>Kutná Hora</b><br>Total supermarkets: 2<br>Kaufland: 1<br>Tesco: 1<br></div>`)[0];
+                popup_d781b4296738323aac15985f5213df67.setContent(html_01843714b758bd9acb658dc838b40ccc);
+            
+        
+
+        marker_af15625aef9e85bc5c39120ce59db7d9.bindPopup(popup_d781b4296738323aac15985f5213df67)
+        ;
+
+        
+    
+    
+                marker_af15625aef9e85bc5c39120ce59db7d9.setIcon(icon_5dba08c915557fa1629a7206bd8f2d38);
+            
+    
+            var marker_58fc3e8165ff4f2fe723bfc851385215 = L.marker(
+                [49.805112625, 18.248998175],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_98a3973d21368956ff8ad0e51fe714a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bad55b3bc9351ed7a7d7640044a78fd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b0b895a345d8482747ae42310b928af = $(`<div id="html_8b0b895a345d8482747ae42310b928af" style="width: 100.0%; height: 100.0%;"><b>Ostrava</b><br>Total supermarkets: 4<br>Tesco: 3<br>Lidl: 1<br></div>`)[0];
+                popup_bad55b3bc9351ed7a7d7640044a78fd9.setContent(html_8b0b895a345d8482747ae42310b928af);
+            
+        
+
+        marker_58fc3e8165ff4f2fe723bfc851385215.bindPopup(popup_bad55b3bc9351ed7a7d7640044a78fd9)
+        ;
+
+        
+    
+    
+                marker_58fc3e8165ff4f2fe723bfc851385215.setIcon(icon_98a3973d21368956ff8ad0e51fe714a6);
+            
+    
+            var marker_19d949c48827fd16ff13c57a47819743 = L.marker(
+                [49.9125665, 16.4381458],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_649e4ef057ac5492899f1640df20ed24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcba952dc8eefdf0751dc0919ca5a59a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6439f1890014b06e0dead88d88039b6a = $(`<div id="html_6439f1890014b06e0dead88d88039b6a" style="width: 100.0%; height: 100.0%;"><b>Česká Třebová</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_fcba952dc8eefdf0751dc0919ca5a59a.setContent(html_6439f1890014b06e0dead88d88039b6a);
+            
+        
+
+        marker_19d949c48827fd16ff13c57a47819743.bindPopup(popup_fcba952dc8eefdf0751dc0919ca5a59a)
+        ;
+
+        
+    
+    
+                marker_19d949c48827fd16ff13c57a47819743.setIcon(icon_649e4ef057ac5492899f1640df20ed24);
+            
+    
+            var marker_7194195a51a0bd8bc6e08d5af29446e6 = L.marker(
+                [50.083461, 12.3710669],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_a91170635e293f30641bf10c5d86c4f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bee4c1e03ad20fbee628ed01c583a220 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8675de0b00e13df80e9b963af903e2e2 = $(`<div id="html_8675de0b00e13df80e9b963af903e2e2" style="width: 100.0%; height: 100.0%;"><b>Cheb</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_bee4c1e03ad20fbee628ed01c583a220.setContent(html_8675de0b00e13df80e9b963af903e2e2);
+            
+        
+
+        marker_7194195a51a0bd8bc6e08d5af29446e6.bindPopup(popup_bee4c1e03ad20fbee628ed01c583a220)
+        ;
+
+        
+    
+    
+                marker_7194195a51a0bd8bc6e08d5af29446e6.setIcon(icon_a91170635e293f30641bf10c5d86c4f5);
+            
+    
+            var marker_55ef92fb8f432f201cdabdaeeb9f7178 = L.marker(
+                [50.3554852, 15.9129027],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_e2f3637be2ddb26456ae065a92dc12e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f15c116a41303c297816c56414658646 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_730441ca846ad0b6629a9cfa0d8855a1 = $(`<div id="html_730441ca846ad0b6629a9cfa0d8855a1" style="width: 100.0%; height: 100.0%;"><b>Jaroměř</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_f15c116a41303c297816c56414658646.setContent(html_730441ca846ad0b6629a9cfa0d8855a1);
+            
+        
+
+        marker_55ef92fb8f432f201cdabdaeeb9f7178.bindPopup(popup_f15c116a41303c297816c56414658646)
+        ;
+
+        
+    
+    
+                marker_55ef92fb8f432f201cdabdaeeb9f7178.setIcon(icon_e2f3637be2ddb26456ae065a92dc12e2);
+            
+    
+            var marker_c0d0c420ad2e15d179e61eb7bfa624cd = L.marker(
+                [50.20930393333333, 15.834598266666667],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_0a7b564fe9563d38127291162263d649 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c6b78d4c05dc80f5a89cc67fce1cbb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50e7201e44a15e536d933ab3ad7627ee = $(`<div id="html_50e7201e44a15e536d933ab3ad7627ee" style="width: 100.0%; height: 100.0%;"><b>Hradec Králové</b><br>Total supermarkets: 3<br>Tesco: 2<br>Lidl: 1<br></div>`)[0];
+                popup_4c6b78d4c05dc80f5a89cc67fce1cbb4.setContent(html_50e7201e44a15e536d933ab3ad7627ee);
+            
+        
+
+        marker_c0d0c420ad2e15d179e61eb7bfa624cd.bindPopup(popup_4c6b78d4c05dc80f5a89cc67fce1cbb4)
+        ;
+
+        
+    
+    
+                marker_c0d0c420ad2e15d179e61eb7bfa624cd.setIcon(icon_0a7b564fe9563d38127291162263d649);
+            
+    
+            var marker_5b5f5d1642c9da84184bb427f84c5f34 = L.marker(
+                [50.6711515, 14.091354299999999],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_9d18c49a674ae4101308dbffaf613523 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6eba9865b6dd2ded167a0307a288a14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd2410f29d065beceaf32a232a4f74c5 = $(`<div id="html_cd2410f29d065beceaf32a232a4f74c5" style="width: 100.0%; height: 100.0%;"><b>Ústí nad Labem</b><br>Total supermarkets: 2<br>Tesco: 1<br>Lidl: 1<br></div>`)[0];
+                popup_c6eba9865b6dd2ded167a0307a288a14.setContent(html_cd2410f29d065beceaf32a232a4f74c5);
+            
+        
+
+        marker_5b5f5d1642c9da84184bb427f84c5f34.bindPopup(popup_c6eba9865b6dd2ded167a0307a288a14)
+        ;
+
+        
+    
+    
+                marker_5b5f5d1642c9da84184bb427f84c5f34.setIcon(icon_9d18c49a674ae4101308dbffaf613523);
+            
+    
+            var marker_5d16f253777a7318bc3aa6e9ad5d5d96 = L.marker(
+                [49.7125831, 18.0546355],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_e2cce42d54797d54ef692e83e40cc5aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_594651d138ac8d86f5a3ca1f30993a03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd98e78b117f112eac5cfcb6a62e0bd8 = $(`<div id="html_bd98e78b117f112eac5cfcb6a62e0bd8" style="width: 100.0%; height: 100.0%;"><b>Studénka</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_594651d138ac8d86f5a3ca1f30993a03.setContent(html_bd98e78b117f112eac5cfcb6a62e0bd8);
+            
+        
+
+        marker_5d16f253777a7318bc3aa6e9ad5d5d96.bindPopup(popup_594651d138ac8d86f5a3ca1f30993a03)
+        ;
+
+        
+    
+    
+                marker_5d16f253777a7318bc3aa6e9ad5d5d96.setIcon(icon_e2cce42d54797d54ef692e83e40cc5aa);
+            
+    
+            var marker_6ed198e767b7a446fa57b7a5fca468b4 = L.marker(
+                [49.4507118, 17.4578356],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_ca45c14436fa516fde21b9be510b4407 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecb594bae587861bab8cb34505f317d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1d6d9a844ebb93e93e041c370afb5eb = $(`<div id="html_c1d6d9a844ebb93e93e041c370afb5eb" style="width: 100.0%; height: 100.0%;"><b>Přerov</b><br>Total supermarkets: 3<br>Tesco: 2<br>Kaufland: 1<br></div>`)[0];
+                popup_ecb594bae587861bab8cb34505f317d6.setContent(html_c1d6d9a844ebb93e93e041c370afb5eb);
+            
+        
+
+        marker_6ed198e767b7a446fa57b7a5fca468b4.bindPopup(popup_ecb594bae587861bab8cb34505f317d6)
+        ;
+
+        
+    
+    
+                marker_6ed198e767b7a446fa57b7a5fca468b4.setIcon(icon_ca45c14436fa516fde21b9be510b4407);
+            
+    
+            var marker_ca48cca2ecd033b6e6e192d231f1a765 = L.marker(
+                [50.23527435, 12.74506855],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_367b6c4783bab4c8d85307fa0cee9017 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b066343a2f4bd3fc61dff2ed10436398 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2453b34e8f70bb359c68e60ce52ef4a1 = $(`<div id="html_2453b34e8f70bb359c68e60ce52ef4a1" style="width: 100.0%; height: 100.0%;"><b>Chodov</b><br>Total supermarkets: 2<br>Lidl: 1<br>Tesco: 1<br></div>`)[0];
+                popup_b066343a2f4bd3fc61dff2ed10436398.setContent(html_2453b34e8f70bb359c68e60ce52ef4a1);
+            
+        
+
+        marker_ca48cca2ecd033b6e6e192d231f1a765.bindPopup(popup_b066343a2f4bd3fc61dff2ed10436398)
+        ;
+
+        
+    
+    
+                marker_ca48cca2ecd033b6e6e192d231f1a765.setIcon(icon_367b6c4783bab4c8d85307fa0cee9017);
+            
+    
+            var marker_25f772b6284ce5a983c7da5979ce7a8c = L.marker(
+                [50.17557213333333, 12.672740366666666],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_53e12af35214cb2a542553ae0b8c06cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46fc895e1fa242408f80d1294798361c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_505d737d0bb2c85c3509e45dc3de54ec = $(`<div id="html_505d737d0bb2c85c3509e45dc3de54ec" style="width: 100.0%; height: 100.0%;"><b>Sokolov</b><br>Total supermarkets: 3<br>Kaufland: 1<br>Lidl: 1<br>Tesco: 1<br></div>`)[0];
+                popup_46fc895e1fa242408f80d1294798361c.setContent(html_505d737d0bb2c85c3509e45dc3de54ec);
+            
+        
+
+        marker_25f772b6284ce5a983c7da5979ce7a8c.bindPopup(popup_46fc895e1fa242408f80d1294798361c)
+        ;
+
+        
+    
+    
+                marker_25f772b6284ce5a983c7da5979ce7a8c.setIcon(icon_53e12af35214cb2a542553ae0b8c06cf);
+            
+    
+            var marker_a69898e7f4add97eeac04c246dda3c44 = L.marker(
+                [50.601206, 13.6021445],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_d61a502380283d27130e66d6c599fb0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7278c749e0bf5aea4f66c4e1b24e8d30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6df594c5f38db0d5dc1b4250d1fb4ece = $(`<div id="html_6df594c5f38db0d5dc1b4250d1fb4ece" style="width: 100.0%; height: 100.0%;"><b>Litvínov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_7278c749e0bf5aea4f66c4e1b24e8d30.setContent(html_6df594c5f38db0d5dc1b4250d1fb4ece);
+            
+        
+
+        marker_a69898e7f4add97eeac04c246dda3c44.bindPopup(popup_7278c749e0bf5aea4f66c4e1b24e8d30)
+        ;
+
+        
+    
+    
+                marker_a69898e7f4add97eeac04c246dda3c44.setIcon(icon_d61a502380283d27130e66d6c599fb0b);
+            
+    
+            var marker_aeec5b01746f856e24c7bda0f1f0e98e = L.marker(
+                [48.97200015, 14.4726938],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_ca4d5d46d042aef61dbf87b6e06b49e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ebba9cbda1d8c1e2b30b6e989f07ddb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95b88899d5103e66c21364215b51afa9 = $(`<div id="html_95b88899d5103e66c21364215b51afa9" style="width: 100.0%; height: 100.0%;"><b>České Budějovice</b><br>Total supermarkets: 2<br>Lidl: 1<br>Tesco: 1<br></div>`)[0];
+                popup_0ebba9cbda1d8c1e2b30b6e989f07ddb.setContent(html_95b88899d5103e66c21364215b51afa9);
+            
+        
+
+        marker_aeec5b01746f856e24c7bda0f1f0e98e.bindPopup(popup_0ebba9cbda1d8c1e2b30b6e989f07ddb)
+        ;
+
+        
+    
+    
+                marker_aeec5b01746f856e24c7bda0f1f0e98e.setIcon(icon_ca4d5d46d042aef61dbf87b6e06b49e3);
+            
+    
+            var marker_385a90892e552232d3d32c6093f504c3 = L.marker(
+                [50.1356514, 12.7968323],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_a5ef183dce07d80fd8352a82fa3a4959 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29f2dab9add6c52978161dc756389601 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fc8ff0beea7733b2f74ab7f174c00f6 = $(`<div id="html_9fc8ff0beea7733b2f74ab7f174c00f6" style="width: 100.0%; height: 100.0%;"><b>Horní Slavkov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_29f2dab9add6c52978161dc756389601.setContent(html_9fc8ff0beea7733b2f74ab7f174c00f6);
+            
+        
+
+        marker_385a90892e552232d3d32c6093f504c3.bindPopup(popup_29f2dab9add6c52978161dc756389601)
+        ;
+
+        
+    
+    
+                marker_385a90892e552232d3d32c6093f504c3.setIcon(icon_a5ef183dce07d80fd8352a82fa3a4959);
+            
+    
+            var marker_84ef51448438d836a5b0897a10fd15a2 = L.marker(
+                [50.2389478, 12.8489089],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_08d6ac531c8cab7c1fbf8f2862df7661 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acfe3c413f728742d9d65a059438d55f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26299dbf93a39cb250bb59006d8f552b = $(`<div id="html_26299dbf93a39cb250bb59006d8f552b" style="width: 100.0%; height: 100.0%;"><b>Karlovy Vary</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_acfe3c413f728742d9d65a059438d55f.setContent(html_26299dbf93a39cb250bb59006d8f552b);
+            
+        
+
+        marker_84ef51448438d836a5b0897a10fd15a2.bindPopup(popup_acfe3c413f728742d9d65a059438d55f)
+        ;
+
+        
+    
+    
+                marker_84ef51448438d836a5b0897a10fd15a2.setIcon(icon_08d6ac531c8cab7c1fbf8f2862df7661);
+            
+    
+            var marker_3b069748bac3ea7de8719fcca2ef9559 = L.marker(
+                [50.5705212, 15.8932205],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_d56dd20d42b4500361795bc6bb0471a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_439a7be86e65b86d94400cf50f5af72a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e7cfb3f2d31e1e315cabc649759ede5 = $(`<div id="html_7e7cfb3f2d31e1e315cabc649759ede5" style="width: 100.0%; height: 100.0%;"><b>Trutnov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_439a7be86e65b86d94400cf50f5af72a.setContent(html_7e7cfb3f2d31e1e315cabc649759ede5);
+            
+        
+
+        marker_3b069748bac3ea7de8719fcca2ef9559.bindPopup(popup_439a7be86e65b86d94400cf50f5af72a)
+        ;
+
+        
+    
+    
+                marker_3b069748bac3ea7de8719fcca2ef9559.setIcon(icon_d56dd20d42b4500361795bc6bb0471a6);
+            
+    
+            var marker_0214636af246e8cf5659f23090753b2c = L.marker(
+                [49.2018683, 15.8901971],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_17884443ae9582926d8b6beae3daa135 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3adadb344855c2b128bbf049b595df6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b23c5426ea8a6aaba49a8a16ddaf11c3 = $(`<div id="html_b23c5426ea8a6aaba49a8a16ddaf11c3" style="width: 100.0%; height: 100.0%;"><b>Třebíč</b><br>Total supermarkets: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_f3adadb344855c2b128bbf049b595df6.setContent(html_b23c5426ea8a6aaba49a8a16ddaf11c3);
+            
+        
+
+        marker_0214636af246e8cf5659f23090753b2c.bindPopup(popup_f3adadb344855c2b128bbf049b595df6)
+        ;
+
+        
+    
+    
+                marker_0214636af246e8cf5659f23090753b2c.setIcon(icon_17884443ae9582926d8b6beae3daa135);
+            
+    
+            var marker_f93c89eef75017043f0a7f3bf3e0b07f = L.marker(
+                [50.77506065, 15.0581758],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_157f2844d74b4791e97cc1ea9e17a8c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e7d9be06fa44fc48a6a6f209b262523 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe8ad6d0bbea2a18705654c160a92362 = $(`<div id="html_fe8ad6d0bbea2a18705654c160a92362" style="width: 100.0%; height: 100.0%;"><b>Liberec</b><br>Total supermarkets: 2<br>Tesco: 2<br></div>`)[0];
+                popup_1e7d9be06fa44fc48a6a6f209b262523.setContent(html_fe8ad6d0bbea2a18705654c160a92362);
+            
+        
+
+        marker_f93c89eef75017043f0a7f3bf3e0b07f.bindPopup(popup_1e7d9be06fa44fc48a6a6f209b262523)
+        ;
+
+        
+    
+    
+                marker_f93c89eef75017043f0a7f3bf3e0b07f.setIcon(icon_157f2844d74b4791e97cc1ea9e17a8c7);
+            
+    
+            var marker_b31830e34abbc348d41aa4e57b379625 = L.marker(
+                [49.4640955, 18.0917753],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_2beb0b9d2f85bc16bd4e09ed4f71f9da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f99cc99ceeff72f804f481abd3e987d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85302824d1a7270eab75be264f4d53af = $(`<div id="html_85302824d1a7270eab75be264f4d53af" style="width: 100.0%; height: 100.0%;"><b>Zubří</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_8f99cc99ceeff72f804f481abd3e987d.setContent(html_85302824d1a7270eab75be264f4d53af);
+            
+        
+
+        marker_b31830e34abbc348d41aa4e57b379625.bindPopup(popup_8f99cc99ceeff72f804f481abd3e987d)
+        ;
+
+        
+    
+    
+                marker_b31830e34abbc348d41aa4e57b379625.setIcon(icon_2beb0b9d2f85bc16bd4e09ed4f71f9da);
+            
+    
+            var marker_86a90068830f313d09bb03d93b0098e4 = L.marker(
+                [49.9087093, 18.3577152],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_1a8884b0823ea56dd08f6be55c1c3b3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9ee5037ecccbc10ba38b6c485a6cf23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f8b7c23c541eb403266f5aaaba017ad = $(`<div id="html_7f8b7c23c541eb403266f5aaaba017ad" style="width: 100.0%; height: 100.0%;"><b>Bohumín - Nový Bohumín</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_e9ee5037ecccbc10ba38b6c485a6cf23.setContent(html_7f8b7c23c541eb403266f5aaaba017ad);
+            
+        
+
+        marker_86a90068830f313d09bb03d93b0098e4.bindPopup(popup_e9ee5037ecccbc10ba38b6c485a6cf23)
+        ;
+
+        
+    
+    
+                marker_86a90068830f313d09bb03d93b0098e4.setIcon(icon_1a8884b0823ea56dd08f6be55c1c3b3b);
+            
+    
+            var marker_c0637753318313b7c6dc58110a83626c = L.marker(
+                [50.2530401, 14.3181859],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_bfb80b19fc5f23a1d91e51f8ae14b694 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c04d72b1671f986d10719d6e2b820035 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef4c00217b9ebe37db5eb9b3034fcf7d = $(`<div id="html_ef4c00217b9ebe37db5eb9b3034fcf7d" style="width: 100.0%; height: 100.0%;"><b>Kralupy nad Vltavou</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_c04d72b1671f986d10719d6e2b820035.setContent(html_ef4c00217b9ebe37db5eb9b3034fcf7d);
+            
+        
+
+        marker_c0637753318313b7c6dc58110a83626c.bindPopup(popup_c04d72b1671f986d10719d6e2b820035)
+        ;
+
+        
+    
+    
+                marker_c0637753318313b7c6dc58110a83626c.setIcon(icon_bfb80b19fc5f23a1d91e51f8ae14b694);
+            
+    
+            var marker_ed1cb79c038eebb3f0aa038441229b2f = L.marker(
+                [50.0136054, 14.4870618],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_31a166e44f6341dae75738cc84b5e7d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0394fa9b30ff738b993dacf14d63578 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efd53e42bf4ca5ce48486041ca699f57 = $(`<div id="html_efd53e42bf4ca5ce48486041ca699f57" style="width: 100.0%; height: 100.0%;"><b>Praha-Kunratice</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_e0394fa9b30ff738b993dacf14d63578.setContent(html_efd53e42bf4ca5ce48486041ca699f57);
+            
+        
+
+        marker_ed1cb79c038eebb3f0aa038441229b2f.bindPopup(popup_e0394fa9b30ff738b993dacf14d63578)
+        ;
+
+        
+    
+    
+                marker_ed1cb79c038eebb3f0aa038441229b2f.setIcon(icon_31a166e44f6341dae75738cc84b5e7d7);
+            
+    
+            var marker_6e57f014c634ead42a912b09176013ba = L.marker(
+                [49.3320815, 18.0061596],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_c3d064fff9b3ce562ddeecf53b5913f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_992a6af9e15cd5ddb4811ee250e1656a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c1a1f0b25de2b286ce6b6e94727e340 = $(`<div id="html_5c1a1f0b25de2b286ce6b6e94727e340" style="width: 100.0%; height: 100.0%;"><b>Vsetín</b><br>Total supermarkets: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_992a6af9e15cd5ddb4811ee250e1656a.setContent(html_5c1a1f0b25de2b286ce6b6e94727e340);
+            
+        
+
+        marker_6e57f014c634ead42a912b09176013ba.bindPopup(popup_992a6af9e15cd5ddb4811ee250e1656a)
+        ;
+
+        
+    
+    
+                marker_6e57f014c634ead42a912b09176013ba.setIcon(icon_c3d064fff9b3ce562ddeecf53b5913f3);
+            
+    
+            var marker_0ba1cd26257deb4fe66f528c0dad73a8 = L.marker(
+                [50.034567550000006, 15.758793449999999],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_248c15567de93889f4549b4b58c0aa84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c743f45f89b4345e49b5f2f02b36dc2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce20708aa410894a8912f3e194dac015 = $(`<div id="html_ce20708aa410894a8912f3e194dac015" style="width: 100.0%; height: 100.0%;"><b>Pardubice</b><br>Total supermarkets: 2<br>Lidl: 1<br>Tesco: 1<br></div>`)[0];
+                popup_c743f45f89b4345e49b5f2f02b36dc2b.setContent(html_ce20708aa410894a8912f3e194dac015);
+            
+        
+
+        marker_0ba1cd26257deb4fe66f528c0dad73a8.bindPopup(popup_c743f45f89b4345e49b5f2f02b36dc2b)
+        ;
+
+        
+    
+    
+                marker_0ba1cd26257deb4fe66f528c0dad73a8.setIcon(icon_248c15567de93889f4549b4b58c0aa84);
+            
+    
+            var marker_b5471f89e73cfe7c6fa8888af029f2f1 = L.marker(
+                [49.1857192, 15.46577],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_c46175be70f17c4ef20b72847842f8b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f63bc7d969d7e66dfd29848b86281070 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_843015ce363c0b1669b26ae0afd84a63 = $(`<div id="html_843015ce363c0b1669b26ae0afd84a63" style="width: 100.0%; height: 100.0%;"><b>Telč</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_f63bc7d969d7e66dfd29848b86281070.setContent(html_843015ce363c0b1669b26ae0afd84a63);
+            
+        
+
+        marker_b5471f89e73cfe7c6fa8888af029f2f1.bindPopup(popup_f63bc7d969d7e66dfd29848b86281070)
+        ;
+
+        
+    
+    
+                marker_b5471f89e73cfe7c6fa8888af029f2f1.setIcon(icon_c46175be70f17c4ef20b72847842f8b1);
+            
+    
+            var marker_bb5436f50895a5bd7fada5e321d6efa3 = L.marker(
+                [49.0893866, 16.6033253],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_ccd68a34478e139b190834d9e073daf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d79d38829de44c6e8744c559d2b1c942 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a8e4be7b8214f7a9d3ae1b134cbf122 = $(`<div id="html_3a8e4be7b8214f7a9d3ae1b134cbf122" style="width: 100.0%; height: 100.0%;"><b>Rajhrad</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_d79d38829de44c6e8744c559d2b1c942.setContent(html_3a8e4be7b8214f7a9d3ae1b134cbf122);
+            
+        
+
+        marker_bb5436f50895a5bd7fada5e321d6efa3.bindPopup(popup_d79d38829de44c6e8744c559d2b1c942)
+        ;
+
+        
+    
+    
+                marker_bb5436f50895a5bd7fada5e321d6efa3.setIcon(icon_ccd68a34478e139b190834d9e073daf9);
+            
+    
+            var marker_b3bf56c0dfc71606120cc92dd0a29c51 = L.marker(
+                [49.8033567, 12.6404365],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_3c09c3f9e4fb0a2e7b929c8bbf27ecf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7796b922c2218dd0ab930aec5b6a6354 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_484e6f30482ac013c4ad4c205b3c0738 = $(`<div id="html_484e6f30482ac013c4ad4c205b3c0738" style="width: 100.0%; height: 100.0%;"><b>Tachov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_7796b922c2218dd0ab930aec5b6a6354.setContent(html_484e6f30482ac013c4ad4c205b3c0738);
+            
+        
+
+        marker_b3bf56c0dfc71606120cc92dd0a29c51.bindPopup(popup_7796b922c2218dd0ab930aec5b6a6354)
+        ;
+
+        
+    
+    
+                marker_b3bf56c0dfc71606120cc92dd0a29c51.setIcon(icon_3c09c3f9e4fb0a2e7b929c8bbf27ecf8);
+            
+    
+            var marker_233a54f934ccf7eab9af1e1346d47fe1 = L.marker(
+                [49.4392979, 15.2112943],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_676a8edf6860bf49378bfd86a77064f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18e735e7adb8addde578529571b461d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e610b1131970eb867bb2600a6001748 = $(`<div id="html_6e610b1131970eb867bb2600a6001748" style="width: 100.0%; height: 100.0%;"><b>Pelhřimov</b><br>Total supermarkets: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_18e735e7adb8addde578529571b461d3.setContent(html_6e610b1131970eb867bb2600a6001748);
+            
+        
+
+        marker_233a54f934ccf7eab9af1e1346d47fe1.bindPopup(popup_18e735e7adb8addde578529571b461d3)
+        ;
+
+        
+    
+    
+                marker_233a54f934ccf7eab9af1e1346d47fe1.setIcon(icon_676a8edf6860bf49378bfd86a77064f6);
+            
+    
+            var marker_633127a79eaac59731b66654ce804b68 = L.marker(
+                [49.6692514, 18.6833506],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_652fcd3060c14ca9073a1bdbd2035fda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bef6a21f3f7a48de86ed9ce02ba28042 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0059d10e0cc5c9ea9f4087f9fb812180 = $(`<div id="html_0059d10e0cc5c9ea9f4087f9fb812180" style="width: 100.0%; height: 100.0%;"><b>Třinec</b><br>Total supermarkets: 1<br>Kaufland: 1<br></div>`)[0];
+                popup_bef6a21f3f7a48de86ed9ce02ba28042.setContent(html_0059d10e0cc5c9ea9f4087f9fb812180);
+            
+        
+
+        marker_633127a79eaac59731b66654ce804b68.bindPopup(popup_bef6a21f3f7a48de86ed9ce02ba28042)
+        ;
+
+        
+    
+    
+                marker_633127a79eaac59731b66654ce804b68.setIcon(icon_652fcd3060c14ca9073a1bdbd2035fda);
+            
+    
+            var marker_3b9df541f155fe5f4dc1bd15d46c883a = L.marker(
+                [49.71886475, 16.281037650000002],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_80492884143af3e73fc458fc670e65b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce59fb28885380472d8ce2f83bf8e56e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5746e218a0102528aede6955fc7da0eb = $(`<div id="html_5746e218a0102528aede6955fc7da0eb" style="width: 100.0%; height: 100.0%;"><b>Polička</b><br>Total supermarkets: 2<br>Tesco: 1<br>Lidl: 1<br></div>`)[0];
+                popup_ce59fb28885380472d8ce2f83bf8e56e.setContent(html_5746e218a0102528aede6955fc7da0eb);
+            
+        
+
+        marker_3b9df541f155fe5f4dc1bd15d46c883a.bindPopup(popup_ce59fb28885380472d8ce2f83bf8e56e)
+        ;
+
+        
+    
+    
+                marker_3b9df541f155fe5f4dc1bd15d46c883a.setIcon(icon_80492884143af3e73fc458fc670e65b3);
+            
+    
+            var marker_dcf9651bc7692201a5adfdb0967baa7a = L.marker(
+                [49.3483698, 16.421303],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_998d5003a56eff784f724189327d254d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4557ada41c8ca9eae50e3ccdd04b8cca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a93ca5eb02a0f6a0cb7b52b2f350e7d4 = $(`<div id="html_a93ca5eb02a0f6a0cb7b52b2f350e7d4" style="width: 100.0%; height: 100.0%;"><b>Tišnov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_4557ada41c8ca9eae50e3ccdd04b8cca.setContent(html_a93ca5eb02a0f6a0cb7b52b2f350e7d4);
+            
+        
+
+        marker_dcf9651bc7692201a5adfdb0967baa7a.bindPopup(popup_4557ada41c8ca9eae50e3ccdd04b8cca)
+        ;
+
+        
+    
+    
+                marker_dcf9651bc7692201a5adfdb0967baa7a.setIcon(icon_998d5003a56eff784f724189327d254d);
+            
+    
+            var marker_08f4d50e799a336310cb389e317cbe9e = L.marker(
+                [50.47339495, 13.42605335],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_78fb24ecd14ccb02ef5fad6ebe32b545 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ca1ea0607d386de4c8ac46cd047f1f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e33afb703da716df5362463b84685f2 = $(`<div id="html_0e33afb703da716df5362463b84685f2" style="width: 100.0%; height: 100.0%;"><b>Chomutov</b><br>Total supermarkets: 2<br>Tesco: 2<br></div>`)[0];
+                popup_5ca1ea0607d386de4c8ac46cd047f1f6.setContent(html_0e33afb703da716df5362463b84685f2);
+            
+        
+
+        marker_08f4d50e799a336310cb389e317cbe9e.bindPopup(popup_5ca1ea0607d386de4c8ac46cd047f1f6)
+        ;
+
+        
+    
+    
+                marker_08f4d50e799a336310cb389e317cbe9e.setIcon(icon_78fb24ecd14ccb02ef5fad6ebe32b545);
+            
+    
+            var marker_406fe9f620e54a3272c5d3339980f7aa = L.marker(
+                [50.3148407, 12.9468325],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_f3bc10959a9a3e494083fb06fe95579b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d6c5913cc551886cc04564adf1b5d35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5546cc8469ee998cf79a0b162b9bde73 = $(`<div id="html_5546cc8469ee998cf79a0b162b9bde73" style="width: 100.0%; height: 100.0%;"><b>Ostrov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_7d6c5913cc551886cc04564adf1b5d35.setContent(html_5546cc8469ee998cf79a0b162b9bde73);
+            
+        
+
+        marker_406fe9f620e54a3272c5d3339980f7aa.bindPopup(popup_7d6c5913cc551886cc04564adf1b5d35)
+        ;
+
+        
+    
+    
+                marker_406fe9f620e54a3272c5d3339980f7aa.setIcon(icon_f3bc10959a9a3e494083fb06fe95579b);
+            
+    
+            var marker_4943237e27615d989fbca304281106de = L.marker(
+                [50.1832877, 12.5576991],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_e4e64f8721a0e464941439fcdc0d33aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_691e70fc53adf566b3fcb8e31b237921 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1abdd8fad9c8a4eb27625f5902bb5cfa = $(`<div id="html_1abdd8fad9c8a4eb27625f5902bb5cfa" style="width: 100.0%; height: 100.0%;"><b>Habartov</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_691e70fc53adf566b3fcb8e31b237921.setContent(html_1abdd8fad9c8a4eb27625f5902bb5cfa);
+            
+        
+
+        marker_4943237e27615d989fbca304281106de.bindPopup(popup_691e70fc53adf566b3fcb8e31b237921)
+        ;
+
+        
+    
+    
+                marker_4943237e27615d989fbca304281106de.setIcon(icon_e4e64f8721a0e464941439fcdc0d33aa);
+            
+    
+            var marker_44497bb9ebeb68cb07a48ae27fd6e6b8 = L.marker(
+                [50.9203246, 15.0806448],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_3d2268485700d99dae007bb66961e97b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40526a5491c0077c620a0464ff9b525d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1f49e9ac9e8713b089651906cb94fae = $(`<div id="html_d1f49e9ac9e8713b089651906cb94fae" style="width: 100.0%; height: 100.0%;"><b>Frýdlant</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_40526a5491c0077c620a0464ff9b525d.setContent(html_d1f49e9ac9e8713b089651906cb94fae);
+            
+        
+
+        marker_44497bb9ebeb68cb07a48ae27fd6e6b8.bindPopup(popup_40526a5491c0077c620a0464ff9b525d)
+        ;
+
+        
+    
+    
+                marker_44497bb9ebeb68cb07a48ae27fd6e6b8.setIcon(icon_3d2268485700d99dae007bb66961e97b);
+            
+    
+            var marker_f79374798081a8f0b393d70f46f7a1c3 = L.marker(
+                [50.2889991, 16.1689721],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_bb19f7548b98c798a058117f324841b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f5cb129639ba6be8c823de00f344253 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b27351adb72498cfbd1ef8f73e33085f = $(`<div id="html_b27351adb72498cfbd1ef8f73e33085f" style="width: 100.0%; height: 100.0%;"><b>Dobruška</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_9f5cb129639ba6be8c823de00f344253.setContent(html_b27351adb72498cfbd1ef8f73e33085f);
+            
+        
+
+        marker_f79374798081a8f0b393d70f46f7a1c3.bindPopup(popup_9f5cb129639ba6be8c823de00f344253)
+        ;
+
+        
+    
+    
+                marker_f79374798081a8f0b393d70f46f7a1c3.setIcon(icon_bb19f7548b98c798a058117f324841b0);
+            
+    
+            var marker_f5ac53156bc5e43089cc2725ea4a490f = L.marker(
+                [49.4841562, 17.1261771],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_e60bb95345f6c93ab886a45e9bf2d607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c95f661411b10e488d96d4b1e4796d7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6615be664b57cce0e1c8ebd289596699 = $(`<div id="html_6615be664b57cce0e1c8ebd289596699" style="width: 100.0%; height: 100.0%;"><b>Držovice</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_c95f661411b10e488d96d4b1e4796d7e.setContent(html_6615be664b57cce0e1c8ebd289596699);
+            
+        
+
+        marker_f5ac53156bc5e43089cc2725ea4a490f.bindPopup(popup_c95f661411b10e488d96d4b1e4796d7e)
+        ;
+
+        
+    
+    
+                marker_f5ac53156bc5e43089cc2725ea4a490f.setIcon(icon_e60bb95345f6c93ab886a45e9bf2d607);
+            
+    
+            var marker_8141e3ca915aaf9ac02af61ce6602d5d = L.marker(
+                [50.0852744, 14.4256997],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_8c6c8569553ffd4965dbf5dd131cb971 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2785edca45f237cd4657d392ebab780a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbac2112039af607c0f86a367f05f37d = $(`<div id="html_bbac2112039af607c0f86a367f05f37d" style="width: 100.0%; height: 100.0%;"><b>Praha 1</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_2785edca45f237cd4657d392ebab780a.setContent(html_bbac2112039af607c0f86a367f05f37d);
+            
+        
+
+        marker_8141e3ca915aaf9ac02af61ce6602d5d.bindPopup(popup_2785edca45f237cd4657d392ebab780a)
+        ;
+
+        
+    
+    
+                marker_8141e3ca915aaf9ac02af61ce6602d5d.setIcon(icon_8c6c8569553ffd4965dbf5dd131cb971);
+            
+    
+            var marker_d9d78d208ae005b40a6f06b3d85b9691 = L.marker(
+                [50.1982082, 14.8513229],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_08e44232f9268fbb686176d2a7145268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c84b005f5190f2db13b4897991f8c8fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c165b5217733a627f5810c9bcbd4c17 = $(`<div id="html_3c165b5217733a627f5810c9bcbd4c17" style="width: 100.0%; height: 100.0%;"><b>Lysá nad Labem</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_c84b005f5190f2db13b4897991f8c8fa.setContent(html_3c165b5217733a627f5810c9bcbd4c17);
+            
+        
+
+        marker_d9d78d208ae005b40a6f06b3d85b9691.bindPopup(popup_c84b005f5190f2db13b4897991f8c8fa)
+        ;
+
+        
+    
+    
+                marker_d9d78d208ae005b40a6f06b3d85b9691.setIcon(icon_08e44232f9268fbb686176d2a7145268);
+            
+    
+            var marker_cc791ab6f30ca403328776b91bb95d8c = L.marker(
+                [50.134489, 14.1385406],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_6fc96acbbc865572dc139ec4d0d6eb4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ec8c95b83f3670e189fd0683e30a7d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35be0b66ed309ac5f4653cc5b235719a = $(`<div id="html_35be0b66ed309ac5f4653cc5b235719a" style="width: 100.0%; height: 100.0%;"><b>Kladno</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_5ec8c95b83f3670e189fd0683e30a7d3.setContent(html_35be0b66ed309ac5f4653cc5b235719a);
+            
+        
+
+        marker_cc791ab6f30ca403328776b91bb95d8c.bindPopup(popup_5ec8c95b83f3670e189fd0683e30a7d3)
+        ;
+
+        
+    
+    
+                marker_cc791ab6f30ca403328776b91bb95d8c.setIcon(icon_6fc96acbbc865572dc139ec4d0d6eb4b);
+            
+    
+            var marker_7ea0acd7cc678c4fdcc5a769cf7afe40 = L.marker(
+                [50.772042, 14.2206877],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_27cf452dac604bf6a92078cce30b8801 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfab2b7046259dbfce269b2a1c3a68ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0bdf3e607c4a257f6f9a6f7350b6fb6 = $(`<div id="html_c0bdf3e607c4a257f6f9a6f7350b6fb6" style="width: 100.0%; height: 100.0%;"><b>Děčín</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_bfab2b7046259dbfce269b2a1c3a68ad.setContent(html_c0bdf3e607c4a257f6f9a6f7350b6fb6);
+            
+        
+
+        marker_7ea0acd7cc678c4fdcc5a769cf7afe40.bindPopup(popup_bfab2b7046259dbfce269b2a1c3a68ad)
+        ;
+
+        
+    
+    
+                marker_7ea0acd7cc678c4fdcc5a769cf7afe40.setIcon(icon_27cf452dac604bf6a92078cce30b8801);
+            
+    
+            var marker_f62b74cd58261f1f5ca1bdf4b80305e2 = L.marker(
+                [48.9826792, 17.4017403],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_d729ec097704164ad48a1f4e5f0e167b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a320fc22815dff63208dff7deef1a51e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7a7ef513b8728cb2bd1cf1ff3bb174f = $(`<div id="html_b7a7ef513b8728cb2bd1cf1ff3bb174f" style="width: 100.0%; height: 100.0%;"><b>Uherský Ostroh</b><br>Total supermarkets: 1<br>Tesco: 1<br></div>`)[0];
+                popup_a320fc22815dff63208dff7deef1a51e.setContent(html_b7a7ef513b8728cb2bd1cf1ff3bb174f);
+            
+        
+
+        marker_f62b74cd58261f1f5ca1bdf4b80305e2.bindPopup(popup_a320fc22815dff63208dff7deef1a51e)
+        ;
+
+        
+    
+    
+                marker_f62b74cd58261f1f5ca1bdf4b80305e2.setIcon(icon_d729ec097704164ad48a1f4e5f0e167b);
+            
+    
+            var marker_dbb898a0c74aa4c1a1d37c05afcc67b7 = L.marker(
+                [48.7406047, 14.4866953],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_85eac6a2205eea4c409f73f67e733f4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_023a328e294d644c0f5db9b86ab09f71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a9674b1f9208faafa20701d56f0ddd8 = $(`<div id="html_1a9674b1f9208faafa20701d56f0ddd8" style="width: 100.0%; height: 100.0%;"><b>Kaplice</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_023a328e294d644c0f5db9b86ab09f71.setContent(html_1a9674b1f9208faafa20701d56f0ddd8);
+            
+        
+
+        marker_dbb898a0c74aa4c1a1d37c05afcc67b7.bindPopup(popup_023a328e294d644c0f5db9b86ab09f71)
+        ;
+
+        
+    
+    
+                marker_dbb898a0c74aa4c1a1d37c05afcc67b7.setIcon(icon_85eac6a2205eea4c409f73f67e733f4a);
+            
+    
+            var marker_c7f51a82897cebe77365e09b00e12780 = L.marker(
+                [49.3458784, 16.041211],
+                {
+}
+            ).addTo(map_c3ea44fc047964e368e175d749acadac);
+        
+    
+            var icon_894b96c54c9093d30a357e23b901dd6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9318b12050b6a01881db5fb8165a7348 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a14af34f85c56f4c1bd25e9bdd82780d = $(`<div id="html_a14af34f85c56f4c1bd25e9bdd82780d" style="width: 100.0%; height: 100.0%;"><b>Velké Meziříčí</b><br>Total supermarkets: 1<br>Lidl: 1<br></div>`)[0];
+                popup_9318b12050b6a01881db5fb8165a7348.setContent(html_a14af34f85c56f4c1bd25e9bdd82780d);
+            
+        
+
+        marker_c7f51a82897cebe77365e09b00e12780.bindPopup(popup_9318b12050b6a01881db5fb8165a7348)
+        ;
+
+        
+    
+    
+                marker_c7f51a82897cebe77365e09b00e12780.setIcon(icon_894b96c54c9093d30a357e23b901dd6f);
+            
+</script>
+</html>

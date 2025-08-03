@@ -1,0 +1,485 @@
+{
+    "version": 0.6,
+    "generator": "Overpass API 0.7.62.7 375dc00a",
+    "osm3s": {
+        "timestamp_osm_base": "2025-08-03T08:55:41Z",
+        "timestamp_areas_base": "2025-08-03T03:30:00Z",
+        "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+    },
+    "elements": [
+        {
+            "type": "node",
+            "id": 28840884,
+            "lat": 49.5754282,
+            "lon": 17.2279435,
+            "tags": {
+                "addr:city": "Olomouc",
+                "addr:housenumber": "1223/8",
+                "addr:postcode": "77900",
+                "addr:street": "Kafkova",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "brand:wikipedia": "en:Tesco",
+                "name": "Tesco",
+                "opening_hours": "Mo-Su 6:00-22:00",
+                "self_checkout": "yes",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 32325831,
+            "lat": 49.7213129,
+            "lon": 17.2880792,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "name": "Lidl",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 33576718,
+            "lat": 50.3580811,
+            "lon": 14.4750262,
+            "tags": {
+                "addr:city": "Mělník",
+                "addr:conscriptionnumber": "3630",
+                "addr:country": "CZ",
+                "addr:housenumber": "3630",
+                "addr:place": "Mělník",
+                "addr:postcode": "27601",
+                "addr:street": "Klášterní",
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "opening_hours": "Mo-Su 07:00-22:00",
+                "phone": "+420 315 650 040",
+                "shop": "supermarket",
+                "source:addr": "cuzk:ruian",
+                "website": "https://www.kaufland.cz/"
+            }
+        },
+        {
+            "type": "node",
+            "id": 130238891,
+            "lat": 50.1351102,
+            "lon": 14.501333,
+            "tags": {
+                "addr:city": "Praha 9",
+                "addr:housenumber": "663",
+                "addr:postcode": "19900",
+                "addr:street": "Veselská",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "internet_access": "wlan",
+                "level": "1",
+                "name": "Tesco",
+                "name:he": "מטרו C לתחנה Letnany ומשם אוטובוס חינמי קו \"0\" או אוטובוס 140,149 עד tupolevova ומשם 2 דקות ברגל",
+                "opening_hours": "Mo-Su 06:00-23:59",
+                "shop": "supermarket",
+                "website": "http://www.iresco.cz",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 251548372,
+            "lat": 49.7762453,
+            "lon": 17.1222987,
+            "tags": {
+                "addr:city": "Uničov",
+                "addr:housenumber": "527",
+                "addr:postcode": "78391",
+                "addr:street": "Šumperská",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "brand:wikipedia": "en:Tesco",
+                "name": "Tesco",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 273741653,
+            "lat": 49.7283289,
+            "lon": 13.3429107,
+            "tags": {
+                "addr:city": "Plzeň",
+                "addr:housenumber": "2/1074",
+                "addr:postcode": "30100",
+                "addr:street": "U Letiště",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "brand:wikipedia": "en:Tesco",
+                "name": "Tesco",
+                "name:ru": "Тэско",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 296450582,
+            "lat": 49.2259831,
+            "lon": 16.5328792,
+            "tags": {
+                "addr:conscriptionnumber": "228",
+                "addr:country": "CZ",
+                "addr:housenumber": "228/1a",
+                "addr:postcode": "63500",
+                "addr:street": "Jakuba Obrovského",
+                "addr:streetnumber": "1a",
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "check_date:opening_hours": "2023-01-08",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 07:00-21:00; Su 08:00-21:00",
+                "operator": "Lidl Česká republika v.o.s.",
+                "phone": "800115435",
+                "shop": "supermarket",
+                "source:addr": "cuzk:ruian",
+                "website": "https://www.lidl.cz/",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 298524759,
+            "lat": 51.0051482,
+            "lon": 14.454252,
+            "tags": {
+                "addr:city": "Šluknov",
+                "addr:housenumber": "1110",
+                "addr:postcode": "40777",
+                "addr:street": "Zámecká",
+                "branch": "supermarket Šluknov",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "brand:wikipedia": "en:Tesco",
+                "name": "Tesco",
+                "opening_hours": "Mo-Su 07:00-20:00",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 302398719,
+            "lat": 49.7057505,
+            "lon": 17.0739779,
+            "tags": {
+                "addr:city": "Litovel",
+                "addr:housenumber": "435/13",
+                "addr:postcode": "78401",
+                "addr:street": "Dukelská",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "brand:wikipedia": "en:Tesco",
+                "name": "Tesco",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 310299070,
+            "lat": 50.0667813,
+            "lon": 14.4447183,
+            "tags": {
+                "addr:floor": "0",
+                "addr:housenumber": "1a",
+                "addr:postcode": "10100",
+                "addr:street": "Vršovická",
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "check_date": "2024-10-30",
+                "email": "hotline@lidl.cz",
+                "level": "0",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 08:00-20:00; Su 08:00-20:00",
+                "operator": "Lidl Česká republika v.o.s.",
+                "payment:cash": "yes",
+                "payment:maestro": "yes",
+                "payment:mastercard": "yes",
+                "payment:visa": "yes",
+                "phone": "+420 800 115 435",
+                "shop": "supermarket",
+                "toilets:wheelchair": "no",
+                "website": "https://www.lidl.cz/",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 312449009,
+            "lat": 50.0473174,
+            "lon": 15.7504987,
+            "tags": {
+                "addr:housename": "Kaufland",
+                "addr:street": "Bělehradská",
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "opening_hours": "Mo-Su 06:00-21:00",
+                "shop": "supermarket",
+                "source": "uhul:ortofoto",
+                "wheelchair": "yes",
+                "wikidata": "Q101002979"
+            }
+        },
+        {
+            "type": "node",
+            "id": 315211261,
+            "lat": 49.5679506,
+            "lon": 16.0800282,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "email": "hotline@lidl.cz",
+                "name": "Lidl",
+                "phone": "+420 800 115 435",
+                "shop": "supermarket",
+                "website": "https://www.lidl.cz/"
+            }
+        },
+        {
+            "type": "node",
+            "id": 318018362,
+            "lat": 49.7749995,
+            "lon": 18.2452333,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 07:00-21:00; Su 08:00-21:00",
+                "operator": "Lidl Česká republika v.o.s.",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 344792726,
+            "lat": 50.0911134,
+            "lon": 14.4708565,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "email": "hotline@lidl.cz",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 07:00-21:00; Su 08:00-21:00",
+                "operator": "Lidl Česká republika v.o.s.",
+                "phone": "+420 800 115 435",
+                "shop": "supermarket",
+                "website": "https://www.lidl.cz/",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 345837173,
+            "lat": 50.0455532,
+            "lon": 14.3227934,
+            "tags": {
+                "addr:city": "Praha 5",
+                "addr:housenumber": "2",
+                "addr:postcode": "15500",
+                "addr:street": "Mukařovského",
+                "brand": "Tesco",
+                "brand:wikidata": "Q487494",
+                "brand:wikipedia": "en:Tesco",
+                "name": "Tesco",
+                "opening_hours": "Mo-Su 07:00-21:00",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 349331778,
+            "lat": 50.7360473,
+            "lon": 15.3064887,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 07:00-21:00; Su 08:00-21:00",
+                "shop": "supermarket",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 354656298,
+            "lat": 50.1630819,
+            "lon": 16.2721588,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "name": "Lidl",
+                "opening_hours": "Mo-Su 07:00-20:00",
+                "operator": "LIDL",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 363825681,
+            "lat": 49.2150739,
+            "lon": 15.895258,
+            "tags": {
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "opening_hours": "Mo-Su 08:00-22:00",
+                "shop": "supermarket",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "type": "node",
+            "id": 387455861,
+            "lat": 49.7339538,
+            "lon": 18.6201854,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 07:00-20:00; Su 08:00-20:00",
+                "operator": "Lidl Česká republika v.o.s.",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 404721147,
+            "lat": 49.3704704,
+            "lon": 16.6429516,
+            "tags": {
+                "addr:city": "Blansko",
+                "addr:conscriptionnumber": "2347",
+                "addr:country": "CZ",
+                "addr:housenumber": "2347/1",
+                "addr:place": "Blansko",
+                "addr:postcode": "67801",
+                "addr:street": "Na Řadech",
+                "addr:streetnumber": "1",
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "check_date:opening_hours": "2024-12-01",
+                "name": "Kaufland",
+                "opening_hours": "Mo-Su 07:00-22:00",
+                "ref:ruian:addr": "27124169",
+                "shop": "supermarket",
+                "source": "mvcr:adresa"
+            }
+        },
+        {
+            "type": "node",
+            "id": 444366636,
+            "lat": 49.832124,
+            "lon": 14.5889639,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "email": "hotline@lidl.cz",
+                "name": "Lidl",
+                "opening_hours": "Mo-Sa 07:00-20:00; Su 08:00-20:00",
+                "operator": "Lidl Česká republika v.o.s.",
+                "phone": "+420 800 115 435",
+                "shop": "supermarket",
+                "source": "cuzk:km;uhul:ortofoto;survey",
+                "website": "https://www.lidl.cz/"
+            }
+        },
+        {
+            "type": "node",
+            "id": 456781439,
+            "lat": 48.8374165,
+            "lon": 16.0642388,
+            "tags": {
+                "addr:housenumber": "3632/156",
+                "addr:postcode": "67181",
+                "addr:street": "Dukelských bojovníků",
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "shop": "supermarket",
+                "source": "www.kaufland.cz",
+                "website": "https://www.kaufland.cz/"
+            }
+        },
+        {
+            "type": "node",
+            "id": 467124871,
+            "lat": 49.0101799,
+            "lon": 14.0008408,
+            "tags": {
+                "brand": "Lidl",
+                "brand:wikidata": "Q151954",
+                "brand:wikipedia": "en:Lidl",
+                "name": "Lidl",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 477222784,
+            "lat": 50.5363289,
+            "lon": 14.1462804,
+            "tags": {
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 538120422,
+            "lat": 50.0929332,
+            "lon": 14.4993925,
+            "tags": {
+                "addr:city": "Praha",
+                "addr:postcode": "19000",
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "opening_hours": "7:00 - 22:00",
+                "payment:cash": "yes",
+                "payment:credit_cards": "yes",
+                "shop": "supermarket"
+            }
+        },
+        {
+            "type": "node",
+            "id": 538423577,
+            "lat": 49.8002417,
+            "lon": 18.2306631,
+            "tags": {
+                "brand": "Kaufland",
+                "brand:wikidata": "Q685967",
+                "brand:wikipedia": "en:Kaufland",
+                "name": "Kaufland",
+                "shop": "supermarket",
+                "wheelchair": "limited"
+            }
+        },
+        {
+            "type": "node",
+            "id": 542947417,
+     
+(Content truncated due to size limit. Use page ranges or line ranges to read remaining content)

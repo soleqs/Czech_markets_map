@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная карта супермаркетов Чешской Республики</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .map-container {
+            width: 100%;
+            height: calc(100vh - 120px);
+            border: none;
+        }
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Интерактивная карта супермаркетов Чешской Республики</h1>
+        <p>Города с супермаркетами Lidl, Kaufland и Tesco</p>
+    </div>
+    
+    <iframe src="czech_republic_city_supermarket_map.html" class="map-container"></iframe>
+    
+    <div class="footer">
+        <p>Данные получены из OpenStreetMap | Создано с использованием Folium</p>
+    </div>
+</body>
+</html>
+
