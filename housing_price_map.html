@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Czech Republic Housing Prices Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    // 1. Initialize the map
+    const map = L.map('map').setView([49.8175, 15.4730], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // 2. Define regional housing price data
+    // IMPORTANT: This data is for demonstration purposes. Please update with accurate values.
+    const regionalPrices = {
+        "Hlavní město Praha": 124900,
+        "Středočeský kraj": 75000,
+        "Jihočeský kraj": 67600,
+        "Plzeňský kraj": 65000,
+        "Karlovarský kraj": 45000,
+        "Ústecký kraj": 42000,
+        "Liberecký kraj": 71000,
+        "Královéhradecký kraj": 69000,
+        "Pardubický kraj": 64000,
+        "Kraj Vysočina": 58000,
+        "Jihomoravský kraj": 102000,
+        "Olomoucký kraj": 61000,
+        "Zlínský kraj": 59000,
+        "Moravskoslezský kraj": 48000
+    };
+
+    // 3. Define styling functions
+    function getColor(price) {
+        return price > 120000 ? '#800026' :
+               price > 100000 ? '#BD0026' :
+               price > 80000  ? '#E31A1C' :
+               price > 60000  ? '#FC4E2A' :
+               price > 40000  ? '#FD8D3C' :
+               price > 20000  ? '#FEB24C' :
+                                '#FFEDA0';
+    }
+
+    function styleFeature(feature) {
+        const regionName = feature.properties.NAZEV_NUTS3; // Adjust this property name based on your GeoJSON file
+        const price = regionalPrices[regionName];
+        return {
+            fillColor: getColor(price),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+    // 4. Define interactivity functions
+    function onEachFeature(feature, layer) {
+        // Adjust this property name based on your GeoJSON file
+        const regionName = feature.properties.NAZEV_NUTS3; 
+        if (feature.properties && regionName) {
+            const price = regionalPrices[regionName] || 'N/A';
+            layer.bindPopup(`<b>${regionName}</b><br>Average Price: ${price.toLocaleString()} CZK/m²`);
+
+            layer.on({
+                mouseover: (e) => {
+                    const layer = e.target;
+                    layer.setStyle({
+                        weight: 5,
+                        color: '#666',
+                        dashArray: '',
+                        fillOpacity: 0.9
+                    });
+                    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                        layer.bringToFront();
+                    }
+                },
+                mouseout: (e) => {
+                    geojsonLayer.resetStyle(e.target);
+                }
+            });
+        }
+    }
+
+    // 5. Load GeoJSON data
+    let geojsonLayer;
+    fetch('czech_regions.geojson')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok. Make sure czech_regions.geojson exists.');
+            }
+            return response.json();
+        })
+        .then(data => {
+            geojsonLayer = L.geoJSON(data, {
+                style: styleFeature,
+                onEachFeature: onEachFeature
+            }).addTo(map);
+        })
+        .catch(error => {
+            console.error('Error loading or parsing GeoJSON:', error);
+            alert('Could not load map data. Please make sure the `czech_regions.geojson` file is in the correct directory and is a valid GeoJSON file.');
+        });
+
+</script>
+
+</body>
+</html>
