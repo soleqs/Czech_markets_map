@@ -1,0 +1,1262 @@
+[
+    {
+        "city": "Aš",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Bechyně",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Bělá pod Bezdězem",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Benešov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Benešov nad Ploučnicí",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Beroun",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Bílina",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Blansko",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Blatná",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Bohumín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Boskovice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Brandýs nad Labem",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Brno",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Broumov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Bruntál",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Břeclav",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Bučovice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Bystřice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Bystřice nad Hostýnem",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Bystřice nad Olší",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Čáslav",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Čelákovice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Čerčany",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Černošice",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Česká Kamenice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Česká Lípa",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Česká Třebová",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "České Budějovice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Český Brod",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Český Krumlov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Český Těšín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Cheb",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Chodov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Chomutov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Chotěboř",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Chrudim",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Dačice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Děčín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Dobruška",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Dolní Břežany",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Domažlice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Držovice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Duchcov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Dvůr Králové",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Františkovy Lázně",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Frenštát pod Radhoštěm",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Frýdek-Místek",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Frýdlant",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Habartov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Havířov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Havlíčkův Brod",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Hlinsko",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Hodonín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Holešov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Holýšov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Horní Slavkov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Hostivice",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Hradec Králové",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Hranice na Moravě",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Humpolec",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Hustopeče",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Ivančice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Jablonec nad Nisou",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Jablunkov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Jaroměř",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Jesenice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Jeseník",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Jičín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Jihlava",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Jilemnice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Jindřichův Hradec",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Jirkov",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Kadaň",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Kamenice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Kaplice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Karlovy Vary",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Karviná",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Kdyně",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Kladno",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Klášterec nad Ohří",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Klatovy",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Kolín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Kopřivnice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Kralupy nad Vltavou",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Kroměříž",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Krupka",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Kunratice",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Kuřim",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Kutná Hora",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Kyjov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Lanškroun",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Liberec",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Líbeznice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Lipník nad Bečvou",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Litoměřice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Litovel",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Litvínov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Loděnice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Louny",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Lovosice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Lysá nad Labem",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Mariánské Lázně",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Mělník",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Mikulov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Milovice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Mimoň",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Mladá Boleslav",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Mohelnice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Moravská Třebová",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Most",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Mukařov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Náchod",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Napajedla",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Nehvizdy",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Neratovice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Nový Bor",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Nový Bydžov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Nový Jičín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Nymburk",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Nýřany",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Olomouc",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Opava",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Orlová",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Osek",
+        "Lidl": false,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Ostrava",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Ostrov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Otrokovice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Pardubice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Pečky",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Pelhřimov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Písek",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Planá",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Plzeň",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Poděbrady",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Pohořelice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Polička",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Praha",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Prachatice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Prostějov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Přelouč",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Přerov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Příbram",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Rajhrad",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Rakovník",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Rokycany",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Rokytnice nad Jizerou",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Rosice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Roudnice nad Labem",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Roztoky",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Rožnov pod Radhoštěm",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Rumburk",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Rychnov nad Kněžnou",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Sázava",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Sedlčany",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Semily",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Skuteč",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Slaný",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Slavičín",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Soběslav",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Sokolov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Stochov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Strakonice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Studénka",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Stříbro",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Sušice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Svitavy",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Šluknov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Šternberk",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Štětí",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Šumperk",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Tábor",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Tachov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Telč",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Teplice",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Tišnov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Trhové Sviny",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Trutnov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Třebíč",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Třeboň",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Třinec",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Turnov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Týn nad Vltavou",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Uherské Hradiště",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Uherský Brod",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Uherský Ostroh",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Uničov",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Ústí nad Labem",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Ústí nad Orlicí",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Valašské Meziříčí",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Varnsdorf",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Velké Meziříčí",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Veselí nad Lužnicí",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Veselí nad Moravou",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Vimperk",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Vlašim",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Vodňany",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Votice",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Vrchlabí",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Vsetín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Vyškov",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Vysoké Mýto",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Zábřeh",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Zápy",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    },
+    {
+        "city": "Zlín",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Znojmo",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Zruč nad Sázavou",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Zubří",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": true
+    },
+    {
+        "city": "Žatec",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": true
+    },
+    {
+        "city": "Žďár nad Sázavou",
+        "Lidl": true,
+        "Kaufland": true,
+        "Tesco": false
+    },
+    {
+        "city": "Železný Brod",
+        "Lidl": true,
+        "Kaufland": false,
+        "Tesco": false
+    }
+]

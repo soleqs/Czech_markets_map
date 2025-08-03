@@ -1,97 +1,142 @@
 Aš
 Bechyně
+Bělá pod Bezdězem
+Benešov
 Benešov nad Ploučnicí
 Beroun
-Blansko
-Bohumín - Nový Bohumín
-Boskovice
-Brandýs nad Labem-Stará Boleslav
-Brno
-Bystřice
 Bílina
+Blansko
+Blatná
+Bohumín
+Boskovice
+Brandýs nad Labem
+Broumov
+Brno
+Bruntál
 Břeclav
+Bučovice
+Bystřice
+Bystřice nad Hostýnem
+Bystřice nad Olší
+Čáslav
+Čelákovice
+Čerčany
+Černošice
+Česká Kamenice
+Česká Lípa
+Česká Třebová
+České Budějovice
+Český Brod
+Český Krumlov
+Český Těšín
 Cheb
 Chodov
 Chomutov
 Chotěboř
 Chrudim
-Dobruška
-Držovice
-Duchco
-Dvůr Králové
+Dačice
 Děčín
+Dobruška
+Dolní Břežany
+Domažlice
+Držovice
+Duchcov
+Dvůr Králové
 Františkovy Lázně
+Frenštát pod Radhoštěm
 Frýdek-Místek
 Frýdlant
 Habartov
+Havířov
 Havlíčkův Brod
+Hlinsko
+Hodonín
 Holešov
+Holýšov
 Horní Slavkov
+Hostivice
 Hradec Králové
+Hranice na Moravě
 Humpolec
+Hustopeče
 Ivančice
 Jablonec nad Nisou
+Jablunkov
 Jaroměř
+Jesenice
+Jeseník
+Jičín
 Jihlava
 Jilemnice
-Jičín
+Jindřichův Hradec
+Jirkov
+Kadaň
+Kamenice
 Kaplice
 Karlovy Vary
 Karviná
 Kdyně
 Kladno
-Klatovy
 Klášterec nad Ohří
+Klatovy
 Kolín
 Kopřivnice
 Kralupy nad Vltavou
 Kroměříž
 Krupka
+Kunratice
+Kuřim
 Kutná Hora
+Kyjov
 Lanškroun
 Liberec
+Líbeznice
+Lipník nad Bečvou
 Litoměřice
 Litovel
 Litvínov
 Loděnice
+Louny
+Lovosice
 Lysá nad Labem
-Líbeznice
 Mariánské Lázně
+Mělník
 Mikulov
 Milovice
 Mimoň
+Mladá Boleslav
+Mohelnice
 Moravská Třebová
 Most
 Mukařov
-Mělník
+Náchod
+Napajedla
 Nehvizdy
 Neratovice
 Nový Bor
+Nový Bydžov
+Nový Jičín
+Nymburk
+Nýřany
 Olomouc
 Opava
 Orlová
+Osek
 Ostrava
 Ostrov
+Otrokovice
 Pardubice
-Pelhřimov
 Pečky
+Pelhřimov
+Písek
 Planá
 Plzeň
 Poděbrady
 Pohořelice
 Polička
 Praha
-Praha 1
-Praha 10
-Praha 11
-Praha 4
-Praha 5
-Praha 8
-Praha 9
-Praha-Barrandov
-Praha-Kunratice
+Prachatice
 Prostějov
-Písek
 Přelouč
 Přerov
 Příbram
@@ -99,57 +144,67 @@ Rajhrad
 Rakovník
 Rokycany
 Rokytnice nad Jizerou
+Rosice
 Roudnice nad Labem
 Roztoky
+Rožnov pod Radhoštěm
 Rumburk
-Rychnov nad Knežnou
+Rychnov nad Kněžnou
+Sázava
 Sedlčany
 Semily
+Skuteč
+Slaný
 Slavičín
 Soběslav
 Sokolov
 Stochov
+Strakonice
 Studénka
 Stříbro
 Sušice
 Svitavy
-Sázava
+Šluknov
+Šternberk
+Štětí
+Šumperk
+Tábor
 Tachov
 Telč
 Teplice
 Tišnov
+Trhové Sviny
 Trutnov
-Turnov
-Tábor
-Týn nad Vltavou
 Třebíč
+Třeboň
 Třinec
+Turnov
+Týn nad Vltavou
 Uherské Hradiště
 Uherský Brod
 Uherský Ostroh
 Uničov
+Ústí nad Labem
+Ústí nad Orlicí
 Valašské Meziříčí
+Varnsdorf
 Velké Meziříčí
 Veselí nad Lužnicí
+Veselí nad Moravou
 Vimperk
 Vlašim
 Vodňany
 Votice
+Vrchlabí
 Vsetín
 Vyškov
+Vysoké Mýto
+Zábřeh
+Zápy
+Zlín
+Znojmo
 Zruč nad Sázavou
 Zubří
-Ústí nad Labem
-Ústí nad Orlicí
-Čelákovice
-Čerčany
-Česká Lípa
-Česká Třebová
-České Budějovice
-Český Krumlov
-Český Těšín
-Říčany
-Šluknov
-Šternberk
-Štětí
 Žatec
+Žďár nad Sázavou
+Železný Brod

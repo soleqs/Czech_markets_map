@@ -1,58 +1,63 @@
 import folium
 import json
 from collections import defaultdict
+import time
 
-# Load supermarket data
-with open("/home/ubuntu/supermarkets.json", "r", encoding="utf-8") as f:
-    supermarket_data = json.load(f)
+try:
+    from geopy.geocoders import Nominatim
+except ImportError:
+    print("Geopy is not installed. Please install it by running: pip install geopy")
+    exit()
+
+# Load user-provided city data
+with open("user_city_data.json", "r", encoding="utf-8") as f:
+    user_cities_data = json.load(f)
+
+# Initialize geolocator
+geolocator = Nominatim(user_agent="czech_supermarket_map")
 
 # Create a map centered on the Czech Republic
 m = folium.Map(location=[49.8175, 15.4730], zoom_start=7)
 
-# Group supermarkets by city
-cities_data = defaultdict(list)
-for element in supermarket_data["elements"]:
-    if element["type"] == "node" and "lat" in element and "lon" in element and "tags" in element and "addr:city" in element["tags"]:
-        lat = element["lat"]
-        lon = element["lon"]
-        name = element["tags"].get("name", "Supermarket")
-        brand = element["tags"].get("brand", "Unknown Brand")
-        city = element["tags"].get("addr:city", "Unknown City")
-        
-        cities_data[city].append({
-            "lat": lat,
-            "lon": lon,
-            "name": name,
-            "brand": brand
-        })
+# Create markers for each city from user data
+for city_data in user_cities_data:
+    city_name = city_data["city"]
+    try:
+        location = geolocator.geocode(f"{city_name}, Czech Republic")
+        if location:
+            lat, lon = location.latitude, location.longitude
+            
+            # Create popup text
+            popup_text = f"<b>{city_name}</b><br>"
+            brands = []
+            if city_data.get("Lidl"):
+                brands.append("Lidl")
+            if city_data.get("Kaufland"):
+                brands.append("Kaufland")
+            if city_data.get("Tesco"):
+                brands.append("Tesco")
+            
+            if brands:
+                popup_text += "Supermarkets:<br>" + "<br>".join(brands)
+            else:
+                popup_text += "No specified supermarkets."
 
-# Create markers for each city
-for city, supermarkets in cities_data.items():
-    if city != "Unknown City":
-        # Calculate average position for the city
-        avg_lat = sum(s["lat"] for s in supermarkets) / len(supermarkets)
-        avg_lon = sum(s["lon"] for s in supermarkets) / len(supermarkets)
+            # Add marker for the city
+            folium.Marker(
+                [lat, lon], 
+                popup=popup_text,
+                icon=folium.Icon(color='green', icon='info-sign', prefix='glyphicon')
+            ).add_to(m)
+        else:
+            print(f"Could not geocode city: {city_name}")
         
-        # Count supermarkets by brand
-        brand_count = defaultdict(int)
-        for s in supermarkets:
-            brand_count[s["brand"]] += 1
-        
-        # Create popup text
-        popup_text = f"<b>{city}</b><br>"
-        popup_text += f"Total supermarkets: {len(supermarkets)}<br>"
-        for brand, count in brand_count.items():
-            popup_text += f"{brand}: {count}<br>"
-        
-        # Add marker for the city
-        folium.Marker(
-            [avg_lat, avg_lon], 
-            popup=popup_text,
-            icon=folium.Icon(color='blue', icon='shopping-cart', prefix='fa')
-        ).add_to(m)
+        # Be respectful of the geocoding service's usage policy
+        time.sleep(1)
+
+    except Exception as e:
+        print(f"An error occurred while geocoding {city_name}: {e}")
 
 # Save the map to an HTML file
-m.save("/home/ubuntu/supermarket_map_project/czech_republic_city_supermarket_map.html")
+m.save("czech_republic_city_supermarket_map.html")
 
-print("Enhanced interactive map saved to czech_republic_city_supermarket_map.html")
-
+print("Enhanced interactive map based on user data saved to czech_republic_city_supermarket_map.html")
