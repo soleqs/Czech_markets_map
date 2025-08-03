@@ -36,20 +36,20 @@
     // 2. Define regional housing price data
     // IMPORTANT: This data is for demonstration purposes. Please update with accurate values.
     const regionalPrices = {
-        "Hlavní město Praha": 124900,
-        "Středočeský kraj": 75000,
-        "Jihočeský kraj": 67600,
-        "Plzeňský kraj": 65000,
-        "Karlovarský kraj": 45000,
-        "Ústecký kraj": 42000,
-        "Liberecký kraj": 71000,
-        "Královéhradecký kraj": 69000,
-        "Pardubický kraj": 64000,
-        "Kraj Vysočina": 58000,
-        "Jihomoravský kraj": 102000,
-        "Olomoucký kraj": 61000,
-        "Zlínský kraj": 59000,
-        "Moravskoslezský kraj": 48000
+        "Prague": 124900,
+        "Středočeský": 75000,
+        "Jihočeský": 67600,
+        "Plzeňský": 65000,
+        "Karlovarský": 45000,
+        "Ústecký": 42000,
+        "Liberecký": 71000,
+        "Královéhradecký": 69000,
+        "Pardubický": 64000,
+        "KrajVysočina": 58000,
+        "Jihomoravský": 102000,
+        "Olomoucký": 61000,
+        "Zlínský": 59000,
+        "Moravskoslezský": 48000
     };
 
     // 3. Define styling functions
@@ -64,7 +64,7 @@
     }
 
     function styleFeature(feature) {
-        const regionName = feature.properties.NAZEV_NUTS3; // Adjust this property name based on your GeoJSON file
+        const regionName = feature.properties.NAME_1; // Adjust this property name based on your GeoJSON file
         const price = regionalPrices[regionName];
         return {
             fillColor: getColor(price),
@@ -79,7 +79,7 @@
     // 4. Define interactivity functions
     function onEachFeature(feature, layer) {
         // Adjust this property name based on your GeoJSON file
-        const regionName = feature.properties.NAZEV_NUTS3; 
+        const regionName = feature.properties.NAME_1; 
         if (feature.properties && regionName) {
             const price = regionalPrices[regionName] || 'N/A';
             layer.bindPopup(`<b>${regionName}</b><br>Average Price: ${price.toLocaleString()} CZK/m²`);
