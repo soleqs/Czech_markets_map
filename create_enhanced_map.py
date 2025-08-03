@@ -12,7 +12,7 @@ m = folium.Map(location=[49.8175, 15.4730], zoom_start=7)
 # Group supermarkets by city
 cities_data = defaultdict(list)
 for element in supermarket_data["elements"]:
-    if element["type"] == "node":
+    if element["type"] == "node" and "lat" in element and "lon" in element and "tags" in element and "addr:city" in element["tags"]:
         lat = element["lat"]
         lon = element["lon"]
         name = element["tags"].get("name", "Supermarket")
@@ -52,7 +52,7 @@ for city, supermarkets in cities_data.items():
         ).add_to(m)
 
 # Save the map to an HTML file
-m.save("/home/ubuntu/czech_republic_city_supermarket_map.html")
+m.save("/home/ubuntu/supermarket_map_project/czech_republic_city_supermarket_map.html")
 
 print("Enhanced interactive map saved to czech_republic_city_supermarket_map.html")
 

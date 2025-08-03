@@ -7,9 +7,9 @@ overpass_query = """
 [out:json][timeout:25];
 area(3600051684)->.searchArea;
 (
-  nwr["shop"="supermarket"]["brand"="Lidl"](area.searchArea);
-  nwr["shop"="supermarket"]["brand"="Kaufland"](area.searchArea);
-  nwr["shop"="supermarket"]["brand"="Tesco"](area.searchArea);
+  nwr["brand"="Lidl"](area.searchArea);
+  nwr["brand"="Kaufland"](area.searchArea);
+  nwr["brand"="Tesco"](area.searchArea);
 );
 out geom;
 """
