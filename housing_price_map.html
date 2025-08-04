@@ -33,8 +33,8 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // 2. Define regional housing price data
-    // IMPORTANT: This data is for demonstration purposes. Please update with accurate values.
+// 2. Define regional housing price data
+    // Data mapped to match GeoJSON region names
     const regionalPrices = {
         "Prague": 124900,
         "Středočeský": 75000,
@@ -52,6 +52,24 @@
         "Moravskoslezský": 48000
     };
 
+    // Create a mapping for special characters if needed
+    const regionNameMap = {
+        "Jihočeský": "Jihočeský",
+        "Jihomoravský": "Jihomoravský",
+        "Karlovarský": "Karlovarský",
+        "KrajVysočina": "KrajVysočina",
+        "Královéhradecký": "Královéhradecký",
+        "Liberecký": "Liberecký",
+        "Moravskoslezský": "Moravskoslezský",
+        "Olomoucký": "Olomoucký",
+        "Pardubický": "Pardubický",
+        "Plzeňský": "Plzeňský",
+        "Prague": "Prague",
+        "Středočeský": "Středočeský",
+        "Ústecký": "Ústecký",
+        "Zlínský": "Zlínský"
+    };
+
     // 3. Define styling functions
     function getColor(price) {
         return price > 120000 ? '#800026' :
@@ -63,9 +81,10 @@
                                 '#FFEDA0';
     }
 
-    function styleFeature(feature) {
-        const regionName = feature.properties.NAME_1; // Adjust this property name based on your GeoJSON file
-        const price = regionalPrices[regionName];
+function styleFeature(feature) {
+        const regionName = feature.properties.NAME_1;
+        const mappedName = regionNameMap[regionName] || regionName;
+        const price = regionalPrices[mappedName];
         return {
             fillColor: getColor(price),
             weight: 2,
@@ -81,7 +100,8 @@
         // Adjust this property name based on your GeoJSON file
         const regionName = feature.properties.NAME_1; 
         if (feature.properties && regionName) {
-            const price = regionalPrices[regionName] || 'N/A';
+            const mappedName = regionNameMap[regionName] || regionName;
+            const price = regionalPrices[mappedName] || 'N/A';
             layer.bindPopup(`<b>${regionName}</b><br>Average Price: ${price.toLocaleString()} CZK/m²`);
 
             layer.on({
