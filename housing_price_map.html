@@ -52,7 +52,7 @@
         "Moravskoslezský": 48000
     };
 
-    // Create a mapping for special characters if needed
+    // Create a mapping between GeoJSON names and our price data names
     const regionNameMap = {
         "Jihočeský": "Jihočeský",
         "Jihomoravský": "Jihomoravský",
@@ -67,7 +67,9 @@
         "Prague": "Prague",
         "Středočeský": "Středočeský",
         "Ústecký": "Ústecký",
-        "Zlínský": "Zlínský"
+        "Zlínský": "Zlínský",
+        // Add mappings for any variations in the GeoJSON
+        "Kraj Vysočina": "KrajVysočina"
     };
 
     // 3. Define styling functions
