@@ -19,9 +19,51 @@
             width: 100%;
             height: 100%;
         }
+        .map-title {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .map-title h1 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .map-title p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .legend {
+            line-height: 18px;
+            color: #555;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.85;
+        }
     </style>
 </head>
 <body>
+
+<div class="map-title">
+    <h1>Average Housing Prices in Czech Republic</h1>
+    <p>Price per square meter (CZK/m²) by region</p>
+</div>
 
 <div id="map"></div>
 
@@ -29,8 +71,8 @@
     // 1. Initialize the map
     const map = L.map('map').setView([49.8175, 15.4730], 7);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution">CARTO</a>'
     }).addTo(map);
 
 // 2. Define regional housing price data
@@ -74,13 +116,13 @@
 
     // 3. Define styling functions
     function getColor(price) {
-        return price > 120000 ? '#800026' :
-               price > 100000 ? '#BD0026' :
-               price > 80000  ? '#E31A1C' :
-               price > 60000  ? '#FC4E2A' :
-               price > 40000  ? '#FD8D3C' :
-               price > 20000  ? '#FEB24C' :
-                                '#FFEDA0';
+        return price > 100000 ? '#67000d' :
+               price > 80000 ? '#a50f15' :
+               price > 60000 ? '#de2d26' :
+               price > 50000 ? '#fb6a4a' :
+               price > 40000 ? '#fc9272' :
+               price > 30000 ? '#fcbba1' :
+                              '#fee5d9';
     }
 
 function styleFeature(feature) {
@@ -93,7 +135,7 @@ function styleFeature(feature) {
             opacity: 1,
             color: 'white',
             dashArray: '3',
-            fillOpacity: 0.7
+            fillOpacity: 0.85
         };
     }
 
@@ -104,7 +146,17 @@ function styleFeature(feature) {
         if (feature.properties && regionName) {
             const mappedName = regionNameMap[regionName] || regionName;
             const price = regionalPrices[mappedName] || 'N/A';
-            layer.bindPopup(`<b>${regionName}</b><br>Average Price: ${price.toLocaleString()} CZK/m²`);
+            layer.bindPopup(
+                `<div style="font-family: Arial, sans-serif; padding: 4px;">
+                    <h3 style="margin: 0 0 8px 0;">${regionName}</h3>
+                    <div style="font-size: 14px;">
+                        <strong>Average Price:</strong><br>
+                        <span style="color: #d73027; font-size: 16px; font-weight: bold;">
+                            ${price.toLocaleString()} CZK/m²
+                        </span>
+                    </div>
+                </div>`
+            );
 
             layer.on({
                 mouseover: (e) => {
@@ -140,6 +192,30 @@ function styleFeature(feature) {
                 style: styleFeature,
                 onEachFeature: onEachFeature
             }).addTo(map);
+
+            // Add legend
+            const legend = L.control({position: 'bottomright'});
+            legend.onAdd = function (map) {
+                const div = L.DomUtil.create('div', 'legend');
+                const grades = [0, 30000, 40000, 50000, 60000, 80000, 100000];
+                const labels = [];
+
+                div.innerHTML = '<h4 style="margin:0 0 10px 0">Average Price CZK/m²</h4>';
+
+                // Loop through our price intervals and generate a label with a colored square for each interval
+                for (let i = 0; i < grades.length; i++) {
+                    const from = grades[i];
+                    const to = grades[i + 1];
+
+                    labels.push(
+                        '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                        from.toLocaleString() + (to ? '&ndash;' + to.toLocaleString() : '+'));
+                }
+
+                div.innerHTML += labels.join('<br>');
+                return div;
+            };
+            legend.addTo(map);
         })
         .catch(error => {
             console.error('Error loading or parsing GeoJSON:', error);
