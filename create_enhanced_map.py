@@ -1,29 +1,83 @@
 import folium
 import json
-from collections import defaultdict
 import time
+from geopy.geocoders import Nominatim
+from folium.plugins import MarkerCluster
 
+# --- 1. Load Data ---
+
+# Load city and supermarket data
 try:
-    from geopy.geocoders import Nominatim
-except ImportError:
-    print("Geopy is not installed. Please install it by running: pip install geopy")
+    with open("user_city_data.json", "r", encoding="utf-8") as f:
+        user_cities_data = json.load(f)
+except FileNotFoundError:
+    print("Error: user_city_data.json not found.")
     exit()
 
-# Load user-provided city data
-with open("user_city_data.json", "r", encoding="utf-8") as f:
-    user_cities_data = json.load(f)
+# Load housing price data
+try:
+    with open("housing_prices.json", "r", encoding="utf-8") as f:
+        housing_prices = json.load(f)
+except FileNotFoundError:
+    print("Error: housing_prices.json not found.")
+    exit()
 
-# Initialize geolocator
-geolocator = Nominatim(user_agent="czech_supermarket_map")
+# Load Czech regions GeoJSON
+try:
+    with open("czech_regions.geojson", "r", encoding="utf-8") as f:
+        czech_regions_geojson = json.load(f)
+except FileNotFoundError:
+    print("Error: czech_regions.geojson not found.")
+    exit()
+
+# --- 2. Initialize Map and Geocoder ---
 
 # Create a map centered on the Czech Republic
-m = folium.Map(location=[49.8175, 15.4730], zoom_start=7)
+m = folium.Map(location=[49.8175, 15.4730], zoom_start=8, tiles="CartoDB positron")
+
+# Initialize geolocator
+geolocator = Nominatim(user_agent="czech_supermarket_map_creator")
+
+# --- 3. Add Choropleth Layer for Housing Prices ---
+
+# Create a Choropleth layer
+folium.Choropleth(
+    geo_data=czech_regions_geojson,
+    name='choropleth',
+    data=housing_prices,
+    columns=['Region', 'Price'],  # This is not used directly, but good practice
+    key_on='feature.properties.NAME_1', # Key in GeoJSON to bind data to
+    fill_color='YlOrRd',
+    fill_opacity=0.7,
+    line_opacity=0.5, # Increased opacity for slightly more visible borders
+    legend_name='Average Housing Price (CZK/m²)',
+).add_to(m)
+
+# Add a separate layer for the region borders to make them stand out
+folium.GeoJson(
+    data=czech_regions_geojson,
+    name="Region Borders",
+    style_function=lambda x: {
+        'color': 'darkgreen',
+        'weight': 3,
+        'fillOpacity': 0  # No fill
+    },
+    tooltip=folium.GeoJsonTooltip(fields=['NAME_1'], aliases=['Region:'])
+).add_to(m)
+
+
+# --- 4. Add Supermarket Markers with Clustering ---
+
+# Create a MarkerCluster layer
+marker_cluster = MarkerCluster().add_to(m)
 
 # Create markers for each city from user data
 for city_data in user_cities_data:
     city_name = city_data["city"]
     try:
+        # Use caching for geocoding to avoid repeated lookups if cities are duplicated
         location = geolocator.geocode(f"{city_name}, Czech Republic")
+
         if location:
             lat, lon = location.latitude, location.longitude
             
@@ -42,22 +96,28 @@ for city_data in user_cities_data:
             else:
                 popup_text += "No specified supermarkets."
 
-            # Add marker for the city
+            # Add marker for the city to the cluster
             folium.Marker(
                 [lat, lon], 
-                popup=popup_text,
-                icon=folium.Icon(color='green', icon='info-sign', prefix='glyphicon')
-            ).add_to(m)
+                popup=folium.Popup(popup_text, max_width=200),
+                icon=folium.Icon(color='blue', icon='shopping-cart', prefix='glyphicon')
+            ).add_to(marker_cluster)
         else:
-            print(f"Could not geocode city: {city_name}")
+            print(f"Warning: Could not geocode city: {city_name}")
         
-        # Be respectful of the geocoding service's usage policy
+        # Be respectful of the geocoding service's usage policy by adding a delay
         time.sleep(1)
 
     except Exception as e:
-        print(f"An error occurred while geocoding {city_name}: {e}")
+        print(f"An error occurred while processing {city_name}: {e}")
 
-# Save the map to an HTML file
-m.save("czech_republic_city_supermarket_map.html")
+# --- 5. Add Layer Control and Save Map ---
 
-print("Enhanced interactive map based on user data saved to czech_republic_city_supermarket_map.html")
+# Add a layer control to toggle layers
+folium.LayerControl().add_to(m)
+
+# Save the map to the new standard file name
+m.save("index.html")
+
+print("Combined interactive map saved to index.html")
+print("This file includes both housing price data and supermarket locations.")
