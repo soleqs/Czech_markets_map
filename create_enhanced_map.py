@@ -49,10 +49,20 @@ folium.Choropleth(
     key_on='feature.properties.NAME_1', # Key in GeoJSON to bind data to
     fill_color='YlOrRd',
     fill_opacity=0.7,
-    line_opacity=0.2,
+    line_opacity=0.5, # Increased opacity for slightly more visible borders
     legend_name='Average Housing Price (CZK/m²)',
-    # The 'data' is a dict, so folium handles the mapping automatically
-    # if key_on matches the keys in the data dict.
+).add_to(m)
+
+# Add a separate layer for the region borders to make them stand out
+folium.GeoJson(
+    data=czech_regions_geojson,
+    name="Region Borders",
+    style_function=lambda x: {
+        'color': 'darkgreen',
+        'weight': 3,
+        'fillOpacity': 0  # No fill
+    },
+    tooltip=folium.GeoJsonTooltip(fields=['NAME_1'], aliases=['Region:'])
 ).add_to(m)
 
 
